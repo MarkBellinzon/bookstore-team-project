@@ -8,3 +8,12 @@
 @import './shopping-list.css';
 @import './signup.css';
 @import './support-ukraine.css';
+@import './reset';
+@import './header';
+@import './allcategories';
+@import './bestseller';
+@import './modal-window';
+@import './shopping-list';
+@import './signup';
+@import './support-ukraine';
+@import './styles';

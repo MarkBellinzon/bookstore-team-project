@@ -8,3 +8,4 @@ import './js/header';
 import './js/modal-window/modal-window';
 import './js/shopping-list';
 import './js/signup';
+import './js/dark-theme';

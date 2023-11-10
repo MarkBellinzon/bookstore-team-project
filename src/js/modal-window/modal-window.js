@@ -2,7 +2,7 @@
 // const modal = document.getElementById('bookModal');
 // const bookInfo = document.getElementById('bookInfoModal');
 
-// bookElements.forEach((bookElement) => {
+// bookElements.forEach(bookElement => {
 //   bookElement.addEventListener('click', () => {
 //     const bookData = getBookData();
 //     updateModalContent(bookData);
@@ -40,3 +40,22 @@
 // }
 
 // closeButton.addEventListener('click', closeModal);
+
+// // Обробник натискання на кнопку додавання в корзину
+// const shoppingButton = document.getElementById('shoppingButton');
+// const successMessage = document.getElementById('successMessage');
+// let inShoppingList = false;
+
+// shoppingButton.addEventListener('click', () => {
+//   if (inShoppingList) {
+//     shoppingButton.textContent = 'Add to shopping list';
+//     successMessage.style.display = 'none';
+//     inShoppingList = false;
+//   } else {
+//     shoppingButton.textContent = 'Remove from the shopping list';
+//     successMessage.textContent =
+//       'Congratulations! You have added the book to the shopping list. To delete, press the button “Remove from the shopping list”.';
+//     successMessage.style.display = 'block';
+//     inShoppingList = true;
+//   }
+// });

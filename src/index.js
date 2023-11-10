@@ -6,6 +6,7 @@ import './js/support-ukraine/support-ukraine';
 import './js/support-ukraine/support-url';
 import './js/header';
 import './js/modal-window/modal-window';
+import './js/modal-window/fetchmodal-window';
 import './js/shopping-list';
 import './js/signup';
 import './js/dark-theme';

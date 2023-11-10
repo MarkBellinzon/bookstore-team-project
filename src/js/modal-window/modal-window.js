@@ -1,58 +1,42 @@
-// const modal = document.querySelector('#modal');
-// const isLoggedIn = localStorage.getItem('isLoggedIn');
-// modal.addEventListener("open", () => {
-//     if (isLoggedIn === 'true') {
-//         const addButton = modal.querySelector(".add-to-list");
-//         addButton.style.display = "block";
-//     } else {
-//         const addButton = modal.querySelector(".add-to-list");
-//         addButton.style.display = "none";
-//     }
-// });
-
 // const bookElements = document.querySelectorAll('.book');
-
-
 // const modal = document.getElementById('bookModal');
-// const bookInfo = document.getElementById('bookInfo');
-
+// const bookInfo = document.getElementById('bookInfoModal');
 
 // bookElements.forEach((bookElement) => {
 //   bookElement.addEventListener('click', () => {
-
-//     const bookData = getBookData(); 
-
+//     const bookData = getBookData();
 //     updateModalContent(bookData);
-
-//       modal.style.display = 'block';
-//        document.addEventListener('keydown', handleEscKeyPress);
+//     modal.style.display = 'block';
+//     document.addEventListener('keydown', handleEscKeyPress);
 //   });
 // });
 
 // function updateModalContent(bookData) {
-//     const title = bookData.title;
-//     const author = bookData.author;
-//     const description =bookData.description;
-//     const image = bookData.image;
-     
-//     bookInfo.innerHTML =
-//         `<h2>${title}</h2>
-//         <p>Author: ${author}</p>
-//         <p>${description}</p>
-//         <img src="${image}" alt="${title}">
-//         `;
+//   const title = bookData.list_name;
+//   const author = bookData.author;
+//   const description = bookData.description;
+//   const image = bookData.book_image;
+
+//   bookInfoModal.innerHTML = `
+//   <img class="modal-img" src="${image}" alt="${title}">
+//     <h3 class="modal-title">${title}</h3>
+//     <p class="modal-author">Author: ${author}</p>
+//     <p class="modal-description">${description}</p>
+//   `;
 // }
 
 // function handleEscKeyPress(event) {
-//   if (event.key === 'Escape') {
+//   if (event.key === 'Escape' || event.keyCode === 27) {
 //     modal.style.display = 'none';
 //     document.removeEventListener('keydown', handleEscKeyPress);
 //   }
 // }
 
-// const closeButton = document.querySelector('.close');
+// const closeButton = document.querySelector('.close-modal-btn');
 
-// closeButton.addEventListener('click', () => {
+// function closeModal() {
 //   modal.style.display = 'none';
 //   document.removeEventListener('keydown', handleEscKeyPress);
-// });
+// }
+
+// closeButton.addEventListener('click', closeModal);

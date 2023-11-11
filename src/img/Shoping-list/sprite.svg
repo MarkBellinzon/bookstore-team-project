@@ -1,0 +1,9 @@
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" 
+xmlns="http://www.w3.org/2000/svg"><defs><symbol id="icon-ellipse" viewBox="0 0 32 32">
+<path d="M32 16c0 8.837-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0s16 7.163 16 16z"/></symbol>
+<symbol id="icon-trash" viewBox="0 0 32 32"><path stroke-linejoin="round" stroke-linecap="round"
+ stroke-width="2.909" d="M12 4h8M4 8h24m-2.667 0-.935 14.026c-.14 2.104-.21 3.157-.665 
+ 3.954a4 4 0 0 1-1.731 1.619c-.826.4-1.881.4-3.99.4h-4.025c-2.109 0-3.163 0-3.99-.4a4.005 
+ 4.005 0 0 1-1.731-1.619c-.455-.798-.525-1.85-.665-3.954L6.666 8m6.667 6v6.667M18.667 14v6.667"/>
+ </symbol>
+ </defs></svg>

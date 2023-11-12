@@ -10,4 +10,5 @@ import './js/modal-window/fetchmodal-window';
 import './js/shopping-list';
 import './js/signup';
 import './js/dark-theme';
-import './js/dark-theme';
+import './js/scroll-up';
+import './js/loader';

@@ -11,7 +11,7 @@
 
 //   function checkLocalStorage() {
 //     const emptyImgTitle = document.querySelector('.empty-img-title');
-//     if (cards.length === 0) {
+//     if (!localStorage || !localStorage.getItem('savedBooks')) {
 //       emptyImgTitle.innerHTML = `<p class="shoping-text">
 //         This page is empty, add some books and proceed to order.
 //       </p>
@@ -28,6 +28,7 @@
 //       paginationContent.style.display = 'block';
 //     }
 //   }
+//   checkLocalStorage();
 
 //   function showPage(page) {
 //     const startIndex = (page - 1) * itemsPerPage;
@@ -63,9 +64,8 @@
 //   function updatePagination() {
 //     totalPages = Math.ceil(cards.length / itemsPerPage);
 //     showPage(currentPage);
-//     checkLocalStorage();
 //   }
-
+//   checkLocalStorage();
 //   showPage(currentPage);
 
 //   prevButton.addEventListener('click', function () {
@@ -83,7 +83,6 @@
 //   });
 //   updatePagination();
 // });
-
 // function cardListMarkup({
 //   webformatURL,
 //   title,
@@ -92,7 +91,7 @@
 //   linkAmazon,
 //   linkBook,
 // }) {
-//   return `<div class="kart-local-stor -container">
+//   return `<div class="kart-local-stor container">
 //     <div class="kard-in">
 //       <div class="img-in-kard">
 //         <img class="book-list-img" src="${webformatURL}" alt="Book-in-shopping-list" />

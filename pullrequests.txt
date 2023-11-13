@@ -20,6 +20,7 @@ https://github.com/MarkBellinzon/bookstore-team-project/pull/11
   |     Artem
   |============================
 */
+https://github.com/MarkBellinzon/bookstore-team-project/pull/12
 /**
   |============================
   |     Roman Kovalchuk

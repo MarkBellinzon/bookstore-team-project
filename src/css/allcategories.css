@@ -1,8 +1,39 @@
   .sidebar {
       width: 335px;
       height: 228px;
-      background: #dfeeff;
       overflow: hidden;
+      margin: 0 auto;
+      padding-top: 20px;
+      padding-bottom: 20px;
+  }
+
+  h1 {
+      text-align: center;
+      color: #111;
+      font-family: DM Sans;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.1875;
+      letter-spacing: -1.28px;
+
+  }
+
+  h2 {
+      color: #111;
+      font-family: DM Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.125;
+      letter-spacing: -0.64px;
+      text-transform: uppercase;
+  }
+
+  .list-categories {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
   }
 
   .list-categories .categories-item {
@@ -14,14 +45,25 @@
       line-height: 1.125;
       letter-spacing: -0.32px;
       transition: all 0.3s ease;
+
   }
 
   .list-categories .categories-item:hover,
   .list-categories .categories-item:focus,
   .list-categories .categories-item:active {
-      color: #000;
+
+      color: #4F2EE8;
+      font-family: DM Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.125;
+      letter-spacing: -0.32px;
+      text-transform: uppercase;
+
+
       cursor: pointer;
-      font-weight: bold;
+
   }
 
   scroll-container {
@@ -44,4 +86,26 @@
 
   .scroll-container::-webkit-scrollbar-track {
       background-color: #dfeeff;
+  }
+
+
+  .wrapper-categories {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+  }
+
+  .list-wrapper-categories {
+      margin: 0 auto;
+  }
+
+  .wrapper-categories-author {
+      color: #B4AFAF;
+      font-family: DM Sans;
+      font-size: 12px;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 1.16;
+      letter-spacing: -0.48px;
   }

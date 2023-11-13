@@ -1,42 +1,47 @@
-.sidebar {
-    width: 335px;
-    height: 228px;
-    background: #DFEEFF;
-    overflow: hidden;
-}
+  .sidebar {
+      width: 335px;
+      height: 228px;
+      background: #dfeeff;
+      overflow: hidden;
+  }
 
-.list-categories {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+  .list-categories .categories-item {
+      color: rgba(17, 17, 17, 0.6);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.125;
+      letter-spacing: -0.32px;
+      transition: all 0.3s ease;
+  }
 
-    color: rgba(17, 17, 17, 0.60);
-    font-family: 'DM Sans', sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.125;
-    letter-spacing: -0.32px;
-}
+  .list-categories .categories-item:hover,
+  .list-categories .categories-item:focus,
+  .list-categories .categories-item:active {
+      color: #000;
+      cursor: pointer;
+      font-weight: bold;
+  }
 
-scroll-container {
-    max-height: 100%;
-    overflow-y: auto;
-    padding-right: 28px;
-    box-sizing: border-box;
-    display: block;
-}
+  scroll-container {
+      max-height: 100%;
+      overflow-y: auto;
+      padding-right: 28px;
+      box-sizing: border-box;
+      display: block;
+  }
 
-scroll-container::-webkit-scrollbar {
-    width: 8px;
-    height: 114px;
-}
+  .scroll-container::-webkit-scrollbar {
+      width: 8px;
+      height: 114px;
+  }
 
-scroll-container::-webkit-scrollbar-thumb {
-    border-radius: 12px;
-    background: #E0E0E0;
-}
+  .scroll-container::-webkit-scrollbar-thumb {
+      border-radius: 12px;
+      background: #e0e0e0;
+  }
 
-scroll-container::-webkit-scrollbar-track {
-    background-color: #DFEEFF;
-}
+  .scroll-container::-webkit-scrollbar-track {
+      background-color: #dfeeff;
+  }

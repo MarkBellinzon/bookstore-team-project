@@ -1,3 +1,65 @@
+.header {
+  padding: 20px 0;
+}
+.header-container {
+  height: 64px;
+  padding: 24px 32px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  background: #fff;
+  border-radius: 0px 0px 8px 8px;
+  border: 1.5px solid #111;
+}
+
+.logo-link {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.navigation {
+  padding-left: 40px;
+  position: relative;
+  z-index: 2;
+  justify-content: space-between;
+}
+.head-nav {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  color: var(--black-color);
+}
+.head-nav-home {
+}
+
+.head-nav-shop {
+  padding-left: 24px;
+}
+.head-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.head-nav-link:hover {
+  padding: 7px 16px;
+  background-color: #eac645;
+  border-radius: 36px;
+  font-weight: 700;
+}
+
 .shoping-list {
   font-family: DM Sans, sans-sarif;
   display: flex;
@@ -78,6 +140,25 @@
   overflow: hidden;
 }
 @media screen and (min-width: 768px) and (max-width: 1439px) {
+  .header-container {
+    padding: 18px 20px;
+    justify-content: space-between;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: relative;
+    background-color: transparent;
+  }
+
+  .navigation {
+    list-style: none;
+  }
+
+  .menu-container {
+    display: none;
+  }
+
   .deskription-book {
     max-height: 53px;
   }
@@ -107,6 +188,14 @@
   line-height: 14px;
 }
 @media screen and (min-width: 1440px) {
+  .header-container {
+    padding: 22px 24px;
+  }
+
+  .navigation {
+    padding: 76px;
+  }
+
   .author-title {
     padding-top: 41px;
   }

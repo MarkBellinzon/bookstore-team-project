@@ -1,6 +1,3 @@
-import Swiper from 'swiper';
-
-
 const supOrgs = [
   {
     title: 'Save the Children',
@@ -49,16 +46,14 @@ const supOrgs = [
   },
 ];
 
-
 const mySwiper = new Swiper('.swiper-container', {
-    slidesPerView: 2,
-    navigation: {
-        nextEl: '.show-button',
-        prevEl: '.hide-button',
-    },
-    loop: false,
+  slidesPerView: 2,
+  navigation: {
+    nextEl: '.show-button',
+    prevEl: '.hide-button',
+  },
+  loop: false,
 });
-
 
 const showMoreButton = document.querySelector('.show-button');
 const hideButton = document.querySelector('.hide-button');

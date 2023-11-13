@@ -87,3 +87,184 @@ input:checked + .slider:before {
 .user-sign-up-icon {
   stroke: #eac645;
 }
+/**
+  |============================
+  | Авторизація
+  |============================
+*/
+.basicLightbox {
+  background-color: #4f2ee8;
+}
+.modal-auth {
+  width: 335px;
+  padding: 40px 20px;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  background-color: #f6f6f6;
+  border: 2px solid #111;
+  border-radius: 18px;
+}
+.auth-close-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: transparent;
+  border: none;
+  color: #111111;
+}
+.icon-modal-close {
+  stroke: currentColor;
+  width: 20px;
+  height: 20px;
+}
+.modal-auth-form {
+  margin-bottom: 14px;
+}
+.auth-form-group {
+  margin-bottom: 24px;
+}
+.auth-form-field {
+  position: relative;
+}
+.auth-form-field:not(:last-child) {
+  margin-bottom: 24px;
+}
+.auth-form-input {
+  width: 100%;
+  padding: 14px 40px 14px 22px;
+  border: none;
+  border-radius: 40px;
+  outline: 2px solid #111111;
+
+  color: #111;
+
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+}
+.auth-form-input::placeholder {
+  color: #111111;
+  text-transform: uppercase;
+}
+.auth-form-input:focus-visible {
+  outline: 2px solid #4f2ee8;
+  background-color: transparent;
+}
+.authorization-form-input:-internal-autofill-selected {
+  background-color: transparent !important;
+  color: black !important;
+}
+.form-icon {
+  stroke: currentColor;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 24px;
+  width: 18px;
+  height: 18px;
+}
+.auth-form-button {
+  display: inline-block;
+  width: 100%;
+
+  padding: 14px 22px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.12;
+
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+
+  color: #f3f3f3;
+  background-color: #111111;
+  border: none;
+  border-radius: 40px;
+}
+.auth-form-button:hover {
+  background-color: #4f2ee8;
+  border-color: #4f2ee8;
+}
+.auth-form-button:focus {
+  background-color: #4f2ee8;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
+  border-color: #4f2ee8;
+}
+.sign-action-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.modal-sign-action {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+
+  color: rgba(17, 17, 17, 0.5);
+
+  cursor: pointer;
+}
+.modal-sign-action:hover,
+.modal-sign-action:focus {
+  color: #4f2ee8;
+}
+.active {
+  color: #4f2ee8;
+  text-decoration: underline solid #4f2ee8;
+}
+
+/* ------------ tablet ++ --------------*/
+@media screen and (min-width: 768px) {
+  .modal-auth {
+    width: 579px;
+    padding: 80px 40px 40px 40px;
+  }
+  .auth-close-btn {
+    top: 24px;
+    right: 24px;
+  }
+  .icon-modal-close {
+    width: 28px;
+    height: 28px;
+  }
+  .modal-auth-form {
+    margin-bottom: 20px;
+  }
+  .auth-form-group {
+    margin-bottom: 40px;
+  }
+  .authorization-form-field:not(:last-child) {
+    margin-bottom: 28px;
+  }
+  .auth-form-input {
+    padding: 18px 38px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .form-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .auth-form-button {
+    padding: 20px 38px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .modal-sign-action {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

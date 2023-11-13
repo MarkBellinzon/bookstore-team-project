@@ -10,6 +10,16 @@ export async function fetchBestsellers() {
         });
 };
 
+export async function fetchCategoryBooks(category) {
+    return await axios.get(`https://books-backend.p.goit.global/books/category?category=${category}`)
+        .then(resp => {
+            if (!resp.status) {
+                throw new Error(resp.status || resp.statusText);
+            }
+            return resp.data;                                             
+        });
+};
+
 export function createCategoryMarkup(categories) {
     return categories.map(({ list_name, books }) => {              
         return `<div class="category-div">
@@ -22,7 +32,7 @@ export function createCategoryMarkup(categories) {
     }).join('');
 };
 
-function createBookMarkup(books) {
+export function createBookMarkup(books) {
     return books.map(({ _id, book_image, author, title }) =>
             `<li class="book-list-item">
             <img

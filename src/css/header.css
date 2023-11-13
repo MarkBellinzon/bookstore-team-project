@@ -1,21 +1,174 @@
 .header {
   padding: 20px 0;
 }
-
-.nav-list {
+.header-container {
+  height: 64px;
+  padding: 24px 32px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+  /* justify-content: space-between; */
+  background: #fff;
+  border-radius: 0px 0px 8px 8px;
+  border: 1.5px solid #111;
 }
-
-.nav-link {
+.headerlogo-link {
+}
+.logo-link {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+}
+.header-logo {
+}
+.logo-bookshelf {
+}
+.menu-toggle {
+  display: none;
+}
+.js-open-menu {
+}
+.mob-burger {
+}
+.menu-container {
+}
+.js-close-menu {
+}
+.is-close {
+}
+.close-btn {
+}
+.navigation {
+  padding-left: 40px;
+  position: relative;
+  z-index: 2;
+  justify-content: space-between;
+}
+.head-nav {
+  font-family: DM Sans;
   font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  color: var(--black-color);
+}
+.head-nav-home {
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+.head-nav-shop {
+  padding-left: 24px;
 }
+.head-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.head-nav-link:hover {
+  padding: 7px 16px;
+  background-color: #eac645;
+  border-radius: 36px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 767px) {
+  .header-container {
+    padding: 18px 20px;
+    justify-content: space-between;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: relative;
+    background-color: transparent;
+  }
+
+  .navigation {
+    list-style: none;
+  }
+
+  .menu-container {
+    display: none;
+  }
+}
+
+@media sreen and (max-width: 1439px) {
+  .header-container {
+    padding: 22px 24px;
+  }
+
+  .navigation {
+    padding: 76px;
+  }
+}
+/* .logo-bookshelf {
+  fill: #111;
+}
+
+
+.mob-burger {
+  position: relative;
+  z-index: 3;
+  background-color: transparent;
+  fill: #111111;
+}
+
+.menu-container {
+  opacity: 0;
+  visibility: visible;
+  pointer-events: auto;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 32px;
+  background-color: #4f2ee8;
+  z-index: 3;
+  transform: translate(100%);
+  transition: transform 0.25s ease-in-out;
+}
+
+.close-btn {
+  fill: #111111;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.head-nav {
+  display: flex;
+  gap: 24px;
+}
+
+.head-nav_item {
+  background-color: #eac645;
+  border-radius: 36px;
+  padding: 8px 16px;
+}
+
+.head-nav_link {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  color: #111111;
+}
+
+.head-nav_logo {
+  width: 20px;
+  height: 20px;
+  fill: var(--black-color);
+  margin-left: 4px;
+}  */

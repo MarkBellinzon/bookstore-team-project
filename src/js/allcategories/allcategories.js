@@ -1,6 +1,7 @@
 import { getNameCategories, getBooksCategory } from "./fetchcategories";
 
 const listCategories = document.querySelector('.list-categories');
+const h1El = document.querySelector('h1');
 const listBooks = document.querySelector(".wrapper-categories");
 const booksCategoryDiv = document.querySelector('.best-categories'); 
 const bestSellerH1 = document.querySelector('.bestseller-title');
@@ -41,11 +42,13 @@ function handleListItemClick(event) {
     const categoryName = event.target.textContent;
 
     listBooks.innerHTML = ''; // Clear previous category
-    booksCategoryDiv.innerHTML = ''; // Clear besseller category
-    bestSellerH1.innerHTML = ''; // Clear H1 besseller category
+    booksCategoryDiv.innerHTML = ''; // Clear bestseller category
+    bestSellerH1.innerHTML = ''; // Clear H1 bestseller category
+    h1El.innerHTML = ''; // Clear H1 category
     const h1Element = document.createElement('h1');
     h1Element.textContent = categoryName;
-    listBooks.appendChild(h1Element);
+    h1Element.classList.add('container');
+    h1El.appendChild(h1Element);
 
     // Call the function to change the color of the last word in the h1 element
     changeLastWordColor(h1Element, '#4F2EE8');
@@ -65,8 +68,8 @@ function createMarkupBooks(arr) {
     const markup = arr.map(({ book_image, title, author }) => `
         <div>
             <ul class="list-wrapper-categories">
-                <li>
-                    <img src="${book_image}" alt="${title}" width="335" height="485" >
+                <li class="wrapper-categories-item">
+                    <img src="${book_image}" alt="${title}" class="wrapper-categories-img" width="335" height="485" >
                     <h2>${title}</h2>
                     <p class="wrapper-categories-author">${author}</p>
                 </li>

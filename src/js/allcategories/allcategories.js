@@ -2,67 +2,79 @@ import { getNameCategories, getBooksCategory } from "./fetchcategories";
 
 const listCategories = document.querySelector('.list-categories');
 const listBooks = document.querySelector(".wrapper-categories");
+const booksCategoryDiv = document.querySelector('.best-categories'); 
+const bestSellerH1 = document.querySelector('.bestseller-title');
 
-// Отримання всіх категорій для сайдбара
+// Function to change color of the last word in an h1 element
+function changeLastWordColor(element, color) {
+    const words = element.textContent.split(' ');
+    const lastWord = words.pop();
+    const newContent = words.join(' ') + ` <span style="color: ${color};">${lastWord}</span>`;
+    element.innerHTML = newContent;
+}
+
+// Fetch all categories for the sidebar
 getNameCategories().then(data => {
     if (data) {
         createMarkup(data);
     } 
-})
-    .catch(error => {
+}).catch(error => {
     console.log(error.message);
 });
 
-// Відмальовка категорій в сайдбарі
+// Render categories in the sidebar
 function createMarkup(arr) {
     const markup = arr.map(({ list_name }) => `
         <li class="categories-item">${list_name}</li>
     `).join("");
     listCategories.insertAdjacentHTML('beforeend', markup);
 
-    // Прослуховувач на всі li елементи
+    // Add event listener to each li element
     const listItems = document.querySelectorAll('.categories-item');
     listItems.forEach(item => {
         item.addEventListener('click', handleListItemClick);
     });
 }
 
-// Отримання книг по категоріях та створення Н1
+// Handle click on a category and render books
 function handleListItemClick(event) {
     const categoryName = event.target.textContent;
 
-    listBooks.innerHTML = ''; // Очищення попередньої категорії
+    listBooks.innerHTML = ''; // Clear previous category
+    booksCategoryDiv.innerHTML = ''; // Clear besseller category
+    bestSellerH1.innerHTML = ''; // Clear H1 besseller category
     const h1Element = document.createElement('h1');
     h1Element.textContent = categoryName;
     listBooks.appendChild(h1Element);
 
+    // Call the function to change the color of the last word in the h1 element
+    changeLastWordColor(h1Element, '#4F2EE8');
+
+    // Fetch books for the selected category
     getBooksCategory(categoryName).then(data => {
-           if (data) {
-               createMarkupBooks(data);
-    } 
-    })
-    .catch(error => {
+        if (data) {
+            createMarkupBooks(data);
+        } 
+    }).catch(error => {
         console.log(error.message);
     });    
 }
 
-// Відмальовка книг окремої категорії
+// Render books for a specific category
 function createMarkupBooks(arr) {
-        const markup = arr.map(({ book_image, title, author }) => `
+    const markup = arr.map(({ book_image, title, author }) => `
         <div>
             <ul class="list-wrapper-categories">
                 <li>
-                    <img src="${book_image}" alt="">
+                    <img src="${book_image}" alt="${title}" width="335" height="485" >
                     <h2>${title}</h2>
-                    <p>${author}</p>
+                    <p class="wrapper-categories-author">${author}</p>
                 </li>
             </ul>
         </div>
     `).join("");
     listBooks.insertAdjacentHTML('beforeend', markup);
 }
-
-
 
 
 

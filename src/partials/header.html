@@ -46,7 +46,7 @@
           alt="close-btn"
         />
       </button>
-      <nav class="navigation">
+      <nav class="navigation js-header-nav">
         <ul class="head-nav">
           <li class="head-nav-home">
             <a class="head-nav-link" href="./index.html">Home</a>
@@ -66,24 +66,35 @@
         </ul>
       </nav>
       <!-- Switcher & buttons -->
-      <div class="header-wrap">
+      <div class="header-container-2">
         <label class="switch">
           <input type="checkbox" class="js-switch-theme" />
           <span class="slider round"></span>
         </label>
-        <!-- <div class="user-wrap unauthorized">
+        <!-- <div class="user-wrap unauthorized js-user-bar js-close-wdw">
           <img src="./images/user.png" alt="user" class="user-img" />
           <p class="user-name js-name"></p>
           <svg width="23" height="26" class="user-icon">
             <use href="./images/sprite.svg#icon-show-more"></use>
           </svg>
         </div> -->
-        <button type="button" class="user-sign-up">
+        <button type="button" class="user-sign-up js-authorization">
           <span class="user-sign-up-text">Sign up</span>
           <svg width="23" height="26" class="user-sign-up-icon">
             <use href="../img/signup/sprite.svg#icon-login-arrow"></use>
           </svg>
-        </button>
+        <!-- </button>
+        <div class="logout-wdw logouthidn js-logout js-close">
+          <p class="signout-text">
+            Signed in as:<span class="signout-name js-name"></span>
+          </p>
+          <button type="button" class="signout-btn js-signOut">
+            Sign out
+            <svg width="23" height="26" class="user-sign-up-icon">
+              <use href="./images/sprite.svg#icon-login-arrow"></use>
+            </svg>
+          </button> -->
+        </div>
       </div>
     </div>
   </div>

@@ -85,9 +85,9 @@ shoppingButton.addEventListener('click', () => {
 });
 // тут починається інше
 // відкриття модального вікна
-// function openModal() {
-//   document.getElementById('modalOverlay').style.display = 'block';
-// }
+function openModal() {
+  document.getElementById('modalOverlay').style.display = 'block';
+}
 
 // // Закрити модальне вікно
 // function closeModal() {

@@ -1,6 +1,4 @@
 .container-ua {
-    
-    padding: 20px;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -20,14 +18,13 @@
         
 }
 
+
 .header-ua {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
-    display: flex;
-    padding-top: 26px;
-    
+    margin-bottom: 16px;
+    padding-top: 26px; 
 }
 
 .support-uk,
@@ -40,15 +37,14 @@
 .swiper-container {
     margin: 0 auto;
     width: 250px;
-    height: 300px;
+    height: 320px;
+    
     
 }
 
 .show-more-container {
     display: flex;
     justify-content: center;
-    
-    
 }
 
 .show-button,
@@ -56,51 +52,101 @@
     cursor: pointer;
     text-align: center;
     
-    
 }
-
 
 .swiper-slide {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
+    opacity: 100%;
+        transition: opacity 0.5s ease-in-out;
+        left: 38px;
+        top: 0;
+        width: 100%;
+        max-width: 100%;
+        filter: brightness(0) invert(1);
+        list-style-type: none;
+        
+        padding: 0;
+        text-align: left;
+        
+        left: -38px;
+        top: 0;
+        font-size: 16px; 
+        height: auto;
+        filter: brightness(0) invert(1);
+        box-sizing: content-box;
+    }
 
-.fade-in {
-    opacity: 1 !important;
-}
+
 
 .show-button {
     cursor: pointer;
     text-align: center;
+    margin-bottom: 24px;
     
 }
 
+.my-slider-list {
+text-align: left;
+flex-shrink: 0;
 
-.splide__slide {
+}
+
+.my-slider-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: auto;
+    height: auto;
+    gap: 16px;
+    filter: brightness(0) invert(1);
+    text-align: left;
+}
+
+
+.img {
+    filter: brightness(0) invert(1);
+    color: #FFF;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
     visibility: visible;
 }
 
-.fade-in {
-    opacity: 1 !important;
+.ol {
+    filter: brightness(0) invert(1);
+    color: #FFF;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    visibility: visible;
 }
 
-.suoOrgs {
-        position: absolute;
-        left: -38px;
-        top: 0;
-        font-size: 16px;
-        font-weight: bold;
-    }
+.numbered-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 38px;
+}
 
-    .org-logo {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        margin-top: 16px;
-        filter: brightness(0) invert(1);
-        
-    }
+.swiper-slide {
+    position: relative;
+    padding-left: 68px;
+    box-sizing: border-box;
+    text-align: left;
+    cursor: pointer;
+    
+}
 
+.slide-number {
+    position: absolute;
+    left: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #fff;
+    margin-right: 16px;
+    transform: translateY(-50%);
+    font-weight: 400;  
+}
+
+.swiper-slide:nth-child(n+7) {
+    display: none;
+}
 

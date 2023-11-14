@@ -1,67 +1,77 @@
+import { supportUrlArray } from './support-url.js';
 import Swiper from 'swiper';
 
-
-const supOrgs = [
-  {
-    title: 'Save the Children',
-    url: 'https://www.savethechildren.net/what-we-do/emergencies/ukraine-crisis',
-    img: new URL('../img/support/savechld.png', import.meta.url).href,
-  },
-  {
-    title: 'Project HOPE',
-    url: 'https://www.projecthope.org/country/ukraine/',
-    img: new URL('../img/support/2.svg', import.meta.url).href,
-  },
-  {
-    title: 'UNITED24',
-    url: 'https://u24.gov.ua/uk',
-    img: new URL('../img/support/3.svg', import.meta.url).href,
-  },
-  {
-    title: 'International Medical Corps',
-    url: 'https://internationalmedicalcorps.org/country/ukraine/',
-    img: new URL('../img/support/4.svg', import.meta.url).href,
-  },
-  {
-    title: 'Medicins Sans Frontieres',
-    url: 'https://www.msf.org/ukraine',
-    img: new URL('../img/support/5.svg', import.meta.url).href,
-  },
-  {
-    title: 'RAZOM',
-    url: 'https://www.razomforukraine.org/',
-    img: new URL('../img/support/6.svg', import.meta.url).href,
-  },
-  {
-    title: 'Action against hunger',
-    url: 'https://www.actionagainsthunger.org/location/europe/ukraine/',
-    img: new URL('../img/support/7.svg', import.meta.url).href,
-  },
-  {
-    title: 'World vision',
-    url: 'https://www.wvi.org/emergencies/ukraine',
-    img: new URL('../img/support/8.svg', import.meta.url).href,
-  },
-  {
-    title: 'Serhiy Prytula Charity Foundation',
-    url: 'https://prytulafoundation.org/en',
-    img: new URL('../img/support/9.svg', import.meta.url).href,
-  },
-];
-
-
+// Ініціалізація Swiper
 const mySwiper = new Swiper('.swiper-container', {
-    slidesPerView: 2,
-    navigation: {
-        nextEl: '.show-button',
-        prevEl: '.hide-button',
-    },
-    loop: false,
+  slidesPerView: 1,
+  spaceBetween: 10,
+  loop: false,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
 });
 
+// Отримання елемента .swiper-wrapper
+const swiperWrapper = document.querySelector('.swiper-wrapper');
 
-const showMoreButton = document.querySelector('.show-button');
+// Додавання слайдів до .swiper-wrapper
+supportUrlArray.forEach((item, index) => {
+  const slide = document.createElement('div');
+  slide.classList.add('swiper-slide');
+
+  if (index >= 6) {
+    slide.classList.add('hidden-slide');
+  }
+
+  const image = document.createElement('img');
+  image.src = item.img;
+  image.alt = item.title;
+
+  slide.appendChild(image);
+
+  const slideNumber = document.createElement('div');
+  slideNumber.classList.add('slide-number');
+  slideNumber.textContent = `0 ${index + 1}`;
+  slide.appendChild(slideNumber);
+
+  swiperWrapper.appendChild(slide);
+});
+
+mySwiper.update();
+
+// Отримання прихованих слайдів та кнопок
+const hiddenSlides = document.querySelectorAll('.swiper-slide.hidden-slide');
+const showButton = document.querySelector('.show-button');
 const hideButton = document.querySelector('.hide-button');
 
-showMoreButton.addEventListener('click', () => mySwiper.slideNext());
-hideButton.addEventListener('click', () => mySwiper.slidePrev());
+// Додаємо обробники подій для кнопок
+showButton.addEventListener('click', toggleSlidesVisibility);
+hideButton.addEventListener('click', toggleSlidesVisibility);
+
+// Функція для зміни видимості слайдів та кнопок
+function toggleSlidesVisibility() {
+  hiddenSlides.forEach(slide => {
+    slide.classList.toggle('hidden-slide');
+  });
+
+  mySwiper.update(); // Оновлюємо Swiper після зміни слайдів
+
+  showButton.style.display = showButton.style.display === 'none' ? 'block' : 'none';
+  hideButton.style.display = hideButton.style.display === 'none' ? 'block' : 'none';
+}
+
+const slides = document.querySelectorAll('.swiper-slide');
+
+slides.forEach((slide, index) => {
+  slide.addEventListener('click', () => {
+    const currentItem = supportUrlArray[index];
+    window.location.href = currentItem.url;
+  });
+});
+
+image.addEventListener('click', () => {
+  console.log('Image clicked:', item.url);
+  // або debugger;
+  window.location.href = item.url;
+});

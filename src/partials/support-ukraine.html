@@ -1,35 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="support-ukraine.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="support-ukraine.css" />
     <title>Bookbasket</title>
-</head>
+  </head>
 
-
-<body>
+  <body>
     <div class="container-ua">
-        <div class="header-ua">
-            <h4 class="support-uk">Support Ukraine</h4>
-            <img class="herb" src="../img/support/herb.svg" alt="herb">
+      <div class="header-ua">
+        <h4 class="support-uk">Support Ukraine</h4>
+        <img class="herb" src="../img/support/herb.svg" alt="herb" />
+      </div>
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper"></div>
+        <div class="show-more-container">
+          <img
+            class="show-button"
+            src="../img/support/buttonDown.svg"
+            alt="Show More Button"
+          />
+          <img
+            class="hide-button"
+            src="../img/support/buttonUp.svg"
+            alt="Show Less Button"
+            style="display: none"
+          />
         </div>
-    
-        
-        <div class="swiper-container">
-            <div class="swiper-wrapper"></div>
-            <div class="show-more-container">
-                <img class="show-button" src="../img/support/buttonDown.svg" alt="Show More Button">
-                <img class="hide-button" src="../img/support/buttonUp.svg" alt="Show Less Button" style="display: none;">
-            </div>
-        </div>
-        </div>
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script src="./support-ukraine.js"></script>
-        <script type="module" src="./index.js"></script>
-    </body>
-        
-    </html>
+      </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./support-ukraine.js"></script>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

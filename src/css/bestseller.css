@@ -23,6 +23,14 @@
     text-align: left;
 }
 
+@media only screen and (min-width: 768px) {
+    .bestseller-title {
+        font-size: 48px;
+        line-height: 52px;
+        letter-spacing: -1.92px;
+    }
+}
+
 .category-title {
     color: #B4AFAF;
     font-size: 14px;
@@ -79,6 +87,11 @@
     text-transform: uppercase;
     margin-left: auto;
     margin-bottom: 40px;
+}
+
+.js-see-more-btn:hover, .js-see-more-btn:focus {
+    background: #4F2EE8;
+    color: #FFF;
 }
 
 @media only screen and (min-width: 768px) {
@@ -154,4 +167,24 @@
     font-weight: 400;
     line-height: 14px;
     letter-spacing: -0.48px;
+}
+
+.books-category-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+.books-category-list {
+    row-gap: 20px;
+    column-gap: 25px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+.books-category-list {
+    column-gap: 24px;
+    }
 }

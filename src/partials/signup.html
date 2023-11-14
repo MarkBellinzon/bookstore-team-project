@@ -1,104 +1,118 @@
-<!-- авторизация sign-up -->
-<!-- <div class="modal">
-  <div class="modal-auth">
-    <button type="button" class="auth-close-btn">
-      <svg class="icon-modal-close" width="28" height="28">
-        <use href="./images/sprite.svg#icon-x-close"></use>
-      </svg>
-    </button>
-    <form class="modal-auth-form" id="signin-form" name="signin-form">
-      <div class="auth-form-group">
-        <div class="auth-form-field">
-          <input
-            type="text"
-            class="auth-form-input"
-            name="user_name"
-            placeholder="name"
-            pattern="^[А-Яа-я-A-Za-z]+$"
-          />
-        </div>
-        <div class="auth-form-field">
-          <input
-            type="email"
-            class="auth-form-input"
-            name="user_email"
-            placeholder="email"
-          />
-          <svg width="28" height="28" class="form-icon">
-            <use href="./images/sprite.svg#icon-mail"></use>
-          </svg>
-        </div>
-        <div class="auth-form-field">
-          <input
-            type="password"
-            class="auth-form-input"
-            name="user_password"
-            placeholder="password"
-            minlength="6"
-            maxlength="20"
-          />
-          <svg width="28" height="28" class="form-icon">
-            <use href="./images/sprite.svg#icon-lock"></use>
-          </svg>
-        </div>
-      </div>
-      <button type="submit" class="auth-form-button">Sign up</button>
-    </form>
-    <ul class="sign-action-group">
-      <li>
-        <a class="modal-sign-action active" href="#">Sign up</a>
-      </li>
-      <li>
-        <a class="modal-sign-action" href="#sign-in">Sign in</a>
-      </li>
-    </ul>
-  </div>
-</div> -->
-
-<!-- Увійти sing-in -->
-<!-- <div class="modal">
-  <div class="modal-auth">
-    <button type="button" class="auth-close-btn">
-      <svg class="icon-modal-close" width="28" height="28">
-        <use href="./images/sprite.svg#icon-x-close"></use>
+<!-- authorization modal -->
+<div class="authorization_backdrop is-hidden" data-modal>
+  <div class="box"></div>
+  <div class="authorization_modal">
+    <button class="authorization_button_close" data-modal-close>
+      <svg class="authorization_icon_close" aria-label="close modal window">
+        <use href="../img/signup/sprite.svg#icon-x-close"></use>
       </svg>
     </button>
 
-    <form class="modal-auth-form" id="signin-form" name="signin_form">
-      <div class="auth-form-field">
+    <!-- form sign in -->
+    <form class="authorization_form display-form" id="sign-in">
+      <div class="authorization_field">
         <input
           type="email"
-          class="auth-form-input"
-          name="user_email"
-          placeholder="email"
+          name="email"
+          class="authorization_input"
+          id="user_email_in"
+          required
+          placeholder="&#32;"
         />
-        <svg width="28" height="28" class="form-icon">
-          <use href="./images/sprite.svg#icon-mail"></use>
+        <label class="authorization_label" for="user_email_in">email</label>
+        <svg class="authorization_icon">
+          <use href="../img/signup/sprite.svg#icon-mail"></use>
         </svg>
       </div>
 
-      <div class="auth-form-field">
+      <div class="authorization_field">
         <input
           type="password"
-          class="auth-form-input"
-          name="user_password"
-          placeholder="password"
-          minlength="6"
-          maxlength="20"
+          name="password"
+          class="authorization_input"
+          id="user_password_in"
+          required
+          placeholder="&#32;"
+          pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+          title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
         />
-        <svg width="28" height="28" class="form-icon">
-          <use href="./images/sprite.svg#icon-lock"></use>
+        <label class="authorization_label" for="user_password_in"
+          >password
+        </label>
+        <svg class="authorization_icon">
+          <use href="../img/signup/sprite.svg#icon-lock"></use>
         </svg>
       </div>
-      <button type="submit" class="auth-form-button">Sign up</button>
+      <button type="submit" class="authorization_button_submit">Sign in</button>
     </form>
-    <ul class="sign-action-group">
-      <li>
-        <a class="modal-sign-action active" href="#">Sign up</a>
-      </li>
-      <li>
-        <a class="modal-sign-action" href="#sign-in">Sign in</a>
-      </li>
-    </ul>
+
+    <!-- form sign up -->
+
+    <form class="authorization_form" id="sign-up">
+      <div class="authorization_field">
+        <input
+          type="text"
+          name="name"
+          class="authorization_input"
+          id="user_name"
+          minlength="2"
+          required
+          placeholder="&#32;"
+          autocomplete="off"
+        />
+        <label class="authorization_label" for="user_name">name</label>
+      </div>
+
+      <div class="authorization_field">
+        <input
+          type="email"
+          name="email"
+          class="authorization_input"
+          id="user_email_up"
+          required
+          placeholder="&#32;"
+        />
+        <label class="authorization_label" for="user_email_up">email</label>
+        <svg class="authorization_icon">
+          <use href="./img/signup/sprite.svg#icon-mail"></use>
+        </svg>
+      </div>
+
+      <div class="authorization_field">
+        <input
+          type="password"
+          name="password"
+          class="authorization_input"
+          id="user_password_up"
+          required
+          placeholder="&#32;"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}"
+          title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
+        />
+        <label class="authorization_label" for="user_password_up"
+          >password
+        </label>
+        <svg class="authorization_icon">
+          <use href="../img/signup/sprite.svg#icon-lock"></use>
+        </svg>
+      </div>
+      <button type="submit" class="authorization_button_submit">Sign up</button>
+    </form>
+    <div class="authorization_link_block">
+      <button
+        type="button"
+        class="authorization_link active-link"
+        data-action="sign-up"
+      >
+        sign up
+      </button>
+      <button
+        type="button"
+        class="authorization_link desactive-link"
+        data-action="sign-in"
+      >
+        sign in
+      </button>
+    </div>
   </div>
-</div> -->
+</div>

@@ -12,7 +12,7 @@ const mySwiper = new Swiper('.swiper-container', {
   },
 });
 
-// Отримання елемента .swiper-wrapper
+// Отр. елемента .swiper-wrapper
 const swiperWrapper = document.querySelector('.swiper-wrapper');
 
 // Додавання слайдів до .swiper-wrapper

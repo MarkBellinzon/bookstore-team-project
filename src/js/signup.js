@@ -1,15 +1,15 @@
-import * as basicLightbox from 'basiclightbox';
-import 'basiclightbox/dist/basicLightbox.min.css';
-import { Notify } from 'notiflix/build/notiflix-notify-aio';
-import { initializeApp } from 'firebase/app';
-import {
-  getAuth,
-  signInWithEmailAndPassword,
-  createUserWithEmailAndPassword,
-  updateProfile,
-  onAuthStateChanged,
-  signOut,
-} from 'firebase/auth';
+// import * as basicLightbox from 'basiclightbox';
+// import 'basiclightbox/dist/basicLightbox.min.css';
+// import { Notify } from 'notiflix/build/notiflix-notify-aio';
+// import { initializeApp } from 'firebase/app';
+// import {
+//   getAuth,
+//   signInWithEmailAndPassword,
+//   createUserWithEmailAndPassword,
+//   updateProfile,
+//   onAuthStateChanged,
+//   signOut,
+// } from 'firebase/auth';
 
 const firebaseConfig = {
   apiKey: 'AIzaSyCezi-53hV5YmQ3k2WfuLJ3Wrj3pLK40cc',

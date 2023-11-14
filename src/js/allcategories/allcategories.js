@@ -45,6 +45,7 @@ function handleListItemClick(event) {
     booksCategoryDiv.innerHTML = ''; // Clear bestseller category
     bestSellerH1.innerHTML = ''; // Clear H1 bestseller category
     h1El.innerHTML = ''; // Clear H1 category
+
     const h1Element = document.createElement('h1');
     h1Element.textContent = categoryName;
     h1Element.classList.add('container');

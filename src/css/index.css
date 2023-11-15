@@ -1,14 +1,6 @@
-@import './reset.css';
-@import './styles.css';
-
-@import './header.css';
-@import './allcategories.css';
-@import './bestseller.css';
-@import './modal-window.css';
-@import './shopping-list.css';
-@import './signup.css';
-@import './support-ukraine.css';
 @import './reset';
+@import './styles';
+
 @import './header';
 @import './allcategories';
 @import './bestseller';
@@ -16,6 +8,5 @@
 @import './shopping-list';
 @import './signup';
 @import './support-ukraine';
-@import './styles';
 @import './dark-theme';
 @import './scroll_up';

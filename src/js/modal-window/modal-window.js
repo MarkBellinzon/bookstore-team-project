@@ -1,4 +1,3 @@
-// ________________________________________________________________________________________________________________________________
 const bookElements = document.querySelectorAll('.book');
 const modal = document.getElementById('bookModal');
 const bookInfo = document.getElementById('bookInfoModal');

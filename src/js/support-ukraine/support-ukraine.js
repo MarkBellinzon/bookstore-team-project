@@ -12,7 +12,7 @@ const mySwiper = new Swiper('.swiper-container', {
   },
 });
 
-// Отр. елемента .swiper-wrapper
+// Отримання елемента .swiper-wrapper
 const swiperWrapper = document.querySelector('.swiper-wrapper');
 
 // Додавання слайдів до .swiper-wrapper
@@ -20,13 +20,19 @@ supportUrlArray.forEach((item, index) => {
   const slide = document.createElement('div');
   slide.classList.add('swiper-slide');
 
-  if (index >= 6) {
+  if (index >= 7) {
     slide.classList.add('hidden-slide');
   }
 
   const image = document.createElement('img');
   image.src = item.img;
   image.alt = item.title;
+
+  // Додано обробник події для зображення
+  image.addEventListener('click', () => {
+    console.log('Image clicked:', item.url);
+    window.location.href = item.url;
+  });
 
   slide.appendChild(image);
 
@@ -38,7 +44,7 @@ supportUrlArray.forEach((item, index) => {
   swiperWrapper.appendChild(slide);
 });
 
-mySwiper.update();
+mySwiper.updateSize();
 
 // Отримання прихованих слайдів та кнопок
 const hiddenSlides = document.querySelectorAll('.swiper-slide.hidden-slide');
@@ -55,23 +61,8 @@ function toggleSlidesVisibility() {
     slide.classList.toggle('hidden-slide');
   });
 
-  mySwiper.update(); // Оновлюємо Swiper після зміни слайдів
+  mySwiper.updateSize(); // Оновлюємо розмір Swiper після зміни слайдів
 
   showButton.style.display = showButton.style.display === 'none' ? 'block' : 'none';
   hideButton.style.display = hideButton.style.display === 'none' ? 'block' : 'none';
 }
-
-const slides = document.querySelectorAll('.swiper-slide');
-
-slides.forEach((slide, index) => {
-  slide.addEventListener('click', () => {
-    const currentItem = supportUrlArray[index];
-    window.location.href = currentItem.url;
-  });
-});
-
-image.addEventListener('click', () => {
-  console.log('Image clicked:', item.url);
-  // або debugger;
-  window.location.href = item.url;
-});

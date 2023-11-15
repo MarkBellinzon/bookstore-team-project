@@ -1,19 +1,27 @@
 .shoping-list {
   font-family: DM Sans, sans-sarif;
-  display: flex;
+  display: block;
   margin-top: 40px;
 }
 .delete-shoping-list {
   cursor: pointer;
 }
 .shopping-title {
-  text-align: left;
+  width: 244px;
+  text-align: center;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: 38px;
   color: var(--black-color);
+  margin: 0 auto;
 }
+@media screen and (min-width: 768px) {
+  .shopping-title {
+    margin: 0;
+  }
+}
+
 .list-title {
   font-size: 32px;
   font-style: normal;
@@ -23,7 +31,7 @@
 }
 
 .empty-img-title {
-  margin-top: 232px;
+  /* margin-top: 232px; */
 }
 
 .shoping-text {

@@ -43,8 +43,7 @@ export function createBookMarkup(books) {
             />
             <p class="book-title-top">${title}</p>
             <p class="book-author-top">${author}</p>
-        </li>`
-        ).join('');
+        </li>`).join('');
 };
 
 // just to change smth to be able to push

@@ -58,6 +58,10 @@ const successMessage = document.getElementById('successMessage');
 let inShoppingList = false;
 
 shoppingButton.addEventListener('click', () => {
+  toggleShoppingList();
+});
+
+function toggleShoppingList() {
   if (inShoppingList) {
     shoppingButton.textContent = 'Add to shopping list';
     successMessage.style.display = 'none';
@@ -68,5 +72,29 @@ shoppingButton.addEventListener('click', () => {
       'Congratulations! You have added the book to the shopping list. To delete, press the button “Remove from the shopping list”.';
     successMessage.style.display = 'block';
     inShoppingList = true;
+
+    const selectedBook = {
+      title,
+      author,
+      description,
+      image,
+      amazon,
+      appleBooks,
+    };
+
+    // Додав обрану книгу у localStorage
+    addToShoppingList(selectedBook);
   }
-});
+}
+
+// Функція для додавання книги до списку покупок в localStorage
+function addToShoppingList(book) {
+  // Отримуємо поточний список книг з localStorage
+  const shoppingList = JSON.parse(localStorage.getItem('shoppingList')) || [];
+
+  // Додав нову книгу до списку
+  shoppingList.push(book);
+
+  // Зберіг оновлений список у localStorage
+  localStorage.setItem('shoppingList', JSON.stringify(shoppingList));
+}

@@ -19,7 +19,7 @@ fetch('https://books-backend.p.goit.global/books')
 //     if (book) {
 //       renderStats(book);
 //       updateButton(
-//         bookId,
+//         book_Id,
 //         book.title,
 //         book.author,
 //         book.description,

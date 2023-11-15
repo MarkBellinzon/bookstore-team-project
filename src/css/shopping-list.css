@@ -1,18 +1,36 @@
 .shoping-list {
   font-family: DM Sans, sans-sarif;
-  display: flex;
+  display: block;
   margin-top: 40px;
 }
+@media screen and (min-width: 1439px) {
+  .shoping-list {
+    display: flex;
+  }
+}
+
 .delete-shoping-list {
   cursor: pointer;
 }
 .shopping-title {
-  text-align: left;
+  text-align: center;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: 38px;
   color: var(--black-color);
+}
+@media screen and (min-width: 1440px) {
+  .shopping-title {
+    text-align: left;
+    margin-top: 40px;
+    padding-left: 40px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .shopping-title {
+    text-align: left;
+  }
 }
 .list-title {
   font-size: 32px;
@@ -23,7 +41,7 @@
 }
 
 .empty-img-title {
-  margin-top: 232px;
+  margin-top: 140px;
 }
 
 .shoping-text {
@@ -79,7 +97,7 @@
   text-align: left;
   padding-bottom: 8px;
 }
-@media screen and (min-width: 768px) and (max-width: 1439px) {
+@media screen and (min-width: 768px) and (max-width: 1440px) {
   .under-title-kard {
     padding-bottom: 14px;
   }
@@ -219,4 +237,20 @@
 
 .pagination button {
   cursor: pointer;
+}
+.suport {
+  display: none;
+}
+@media screen and (min-width: 1440px) {
+  .suport {
+    width: 335px;
+    height: 474px;
+    border-radius: 16px;
+    background: radial-gradient(
+      189.32% 190.93% at 59.76% -23.42%,
+      #4f2ee8 18.03%,
+      #fff 100%
+    );
+    box-shadow: 0px 10px 10px 0px rgba(245, 245, 247, 0.1);
+  }
 }

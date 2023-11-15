@@ -1,15 +1,33 @@
 .shoping-list {
   font-family: DM Sans, sans-sarif;
-  display: flex;
+  display: block;
   margin-top: 40px;
 }
+@media screen and (min-width: 1440px) {
+  .shoping-list {
+    display: flex;
+  }
+}
+
+.delete-shoping-list {
+  cursor: pointer;
+}
 .shopping-title {
+  width: 244px;
+  text-align: center;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: 38px;
   color: var(--black-color);
+  margin: 0 auto;
 }
+@media screen and (min-width: 768px) {
+  .shopping-title {
+    margin: 0;
+  }
+}
+
 .list-title {
   font-size: 32px;
   font-style: normal;
@@ -19,8 +37,9 @@
 }
 
 .empty-img-title {
-  margin-top: 232px;
+  /* margin-top: 232px; */
 }
+
 .shoping-text {
   width: 349px;
   font-size: 18px;
@@ -30,6 +49,17 @@
   color: var(--black-color);
   text-align: center;
   margin: 0 auto;
+  margin-top: 120px;
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .shoping-text {
+    margin-top: 140px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .shoping-text {
+    margin-top: 120px;
+  }
 }
 
 .img-shoping-list {

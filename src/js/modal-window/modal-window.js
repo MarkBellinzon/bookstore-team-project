@@ -11,25 +11,7 @@ bookElements.forEach(bookElement => {
   });
 });
 
-// function updateModalContent(bookData) {
-//   const title = bookData.list_name;
-//   const author = bookData.author;
-//   const description = bookData.description;
-//   const image = bookData.book_image;
-//   const amazon = bookData.buy_links.find(link => link.name === 'Amazon').url;
-//   const appleBooks = bookData.buy_links.find(
-//     link => link.name === 'Apple Books'
-//   ).url;
-//   bookInfoModal.innerHTML = `
-//   <img class="modal-img" src="${image}" alt="${title}">
-//     <h3 class="modal-title">${title}</h3>
-//     <p class="modal-author">Author: ${author}</p>
-//     <p class="modal-description">${description}</p>
-//     <a href="${amazon}" target="_blank" rel="noopener noreferrer" class="modal-link">Amazon</a>
-//     <a href="${appleBooks}" target="_blank" rel="noopener noreferrer" class="modal-link">Apple Books</a>
-//   `;
-// }
-function updateModalContent(bookData) {
+function updateModalContentNew(bookData) {
   const title = bookData.list_name;
   const author = bookData.author;
   const description = bookData.description;
@@ -39,7 +21,7 @@ function updateModalContent(bookData) {
   const amazon = links.get('Amazon');
   const appleBooks = links.get('Apple Books');
 
-  bookInfoModal.innerHTML = `
+  bookInfo.innerHTML = `
     <img class="modal-img" src="${image}" alt="${title}">
     <h3 class="modal-title">${title}</h3>
     <p class="modal-author">Author: ${author}</p>
@@ -50,7 +32,7 @@ function updateModalContent(bookData) {
 }
 
 function handleEscKeyPress(event) {
-  if (event.key === 'Escape' || event.keyCode === 27) {
+  if (event.key === 'Escape') {
     modal.style.display = 'none';
     document.removeEventListener('keydown', handleEscKeyPress);
   }
@@ -65,12 +47,21 @@ function closeModal() {
 
 closeButton.addEventListener('click', closeModal);
 
+// function openModal() {
+//   document.getElementById('modalOverlay').style.display = 'block';
+//   modalOverlay.style.display = 'none';
+// }
+
 // Обробник натискання на кнопку додавання в Shoping List
 const shoppingButton = document.getElementById('shoppingButton');
 const successMessage = document.getElementById('successMessage');
 let inShoppingList = false;
 
 shoppingButton.addEventListener('click', () => {
+  toggleShoppingList();
+});
+
+function toggleShoppingList() {
   if (inShoppingList) {
     shoppingButton.textContent = 'Add to shopping list';
     successMessage.style.display = 'none';
@@ -81,21 +72,29 @@ shoppingButton.addEventListener('click', () => {
       'Congratulations! You have added the book to the shopping list. To delete, press the button “Remove from the shopping list”.';
     successMessage.style.display = 'block';
     inShoppingList = true;
+
+    const selectedBook = {
+      title,
+      author,
+      description,
+      image,
+      amazon,
+      appleBooks,
+    };
+
+    // Додав обрану книгу у localStorage
+    addToShoppingList(selectedBook);
   }
-});
-// тут починається інше
-// відкриття модального вікна
-function openModal() {
-  document.getElementById('modalOverlay').style.display = 'block';
 }
 
-// // Закрити модальне вікно
-// function closeModal() {
-//   document.getElementById('modalOverlay').style.display = 'none';
-// }
+// Функція для додавання книги до списку покупок в localStorage
+function addToShoppingList(book) {
+  // Отримуємо поточний список книг з localStorage
+  const shoppingList = JSON.parse(localStorage.getItem('shoppingList')) || [];
 
-// // Додати обробники подій на кнопки відкриття та закриття модального вікна
-// document.getElementById('openModalButton').addEventListener('click', openModal);
-// document
-//   .getElementById('closeModalButton')
-//   .addEventListener('click', closeModal);
+  // Додав нову книгу до списку
+  shoppingList.push(book);
+
+  // Зберіг оновлений список у localStorage
+  localStorage.setItem('shoppingList', JSON.stringify(shoppingList));
+}

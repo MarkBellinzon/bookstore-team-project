@@ -1,6 +1,5 @@
 import { getNameCategories, getBooksCategory } from "./fetchcategories";
 
-
 const listCategories = document.querySelector('.list-categories');
 const h1El = document.querySelector('h1');
 const listBooks = document.querySelector(".wrapper-categories");

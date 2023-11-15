@@ -16,7 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "@splidejs/splide": "^4.1.4",
-    "axios": "^1.6.1",
+    "axios": "^1.6.2",
     "basiclightbox": "^5.0.4",
     "firebase": "^10.6.0",
     "lodash.debounce": "^4.0.8",

@@ -351,7 +351,7 @@ input:checked + .slider:before {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 20;
+  right: 20px;
   width: 15px;
   height: 15px;
 }
@@ -359,7 +359,7 @@ input:checked + .slider:before {
   .authorization_icon {
     width: 18px;
     height: 18px;
-    right: 24;
+    right: 24px;
   }
 }
 @media screen and (min-width: 768px) {

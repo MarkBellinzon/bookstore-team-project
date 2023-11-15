@@ -24,7 +24,7 @@ export function createCategoryMarkup(categories) {
     return categories.map(({ list_name, books }) => {              
         return `<div class="category-div">
                 <h3 class="category-title">${list_name}</h3>
-                <ul class="book-list">
+                <ul class="book-list-top">
                 ${createBookMarkup(books)}                  
                 </ul>
                 <button type="button" class="js-see-more-btn">See more</button>             
@@ -34,15 +34,15 @@ export function createCategoryMarkup(categories) {
 
 export function createBookMarkup(books) {
     return books.map(({ _id, book_image, author, title }) =>
-            `<li class="book-list-item">
+            `<li class="book-list-top-item">
             <img
-            class="book-cover"
+            class="book-cover-top"
             data-book-id="${_id}"            
             src="${book_image}"
             alt="book-cover"
             />
-            <p class="book-title">${title}</p>
-            <p class="book-author">${author}</p>
+            <p class="book-title-top">${title}</p>
+            <p class="book-author-top">${author}</p>
         </li>`
         ).join('');
 };

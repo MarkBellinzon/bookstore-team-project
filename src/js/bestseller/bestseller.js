@@ -27,16 +27,18 @@ function seeMoreHandler(evt) {
     fetchCategoryBooks(categoryName)
         .then(books => {
             bestsellerDiv.innerHTML = 
-                `<h1>${categoryName}</h1>
+                `<h1 class='bestseller-title'>${categoryName}</h1>
                 <div class="category-wrapper">
                 <ul class="books-category-list">
                 ${createBookMarkup(books)}                  
                 </ul>                             
             </div>`
+
+            bestsellerDiv.querySelectorAll('.book-list-top-item').forEach((item) => item.style.display = 'block');
         })
         .catch((err) => {
             console.error(err);
             Notiflix.Notify.failure('Sorry, there are no books found. Please try again!');
         }); 
-};
+    };
 

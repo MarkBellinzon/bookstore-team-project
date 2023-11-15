@@ -48,13 +48,8 @@ function handleListItemClick(event) {
     bestSellerH1.innerHTML = ''; // Clear H1 bestseller category
     h1El.innerHTML = ''; // Clear H1 category
 
-   // Clear See More Category after checking new Category
-    if (bestsellerContainer) {
-        bestsellerContainer.remove();
-    } else {
-        console.log("Element not found");
-    }
-
+    bestsellerContainer.innerHTML = '';
+  
     const h1Element = document.createElement('h1');
     h1Element.textContent = categoryName;
     h1Element.classList.add('container');

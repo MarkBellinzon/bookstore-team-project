@@ -9,10 +9,10 @@ document.addEventListener('DOMContentLoaded', function () {
   const nextButton = document.querySelector('.next-page');
   const pageNum = document.querySelector('.page-num');
 
-  //   function checkLocalStorage() {
-  //     const emptyImgTitle = document.querySelector('.empty-img-title');
-  //     if (!localStorage || !localStorage.getItem('savedBooks')) {
-  //       emptyImgTitle.innerHTML = `<p class="shoping-text">
+  // function checkLocalStorage() {
+  //   const emptyImgTitle = document.querySelector('.empty-img-title');
+  //   if (!localStorage || !localStorage.getItem('savedBooks')) {
+  //     emptyImgTitle.innerHTML = `<p class="shoping-text">
   //         This page is empty, add some books and proceed to order.
   //       </p>
   //       <img
@@ -22,13 +22,13 @@ document.addEventListener('DOMContentLoaded', function () {
   //         alt="Books"
   //         width="322"
   //       />`;
-  //       paginationContent.style.display = 'none';
-  //     } else {
-  //       emptyImgTitle.innerHTML = '';
-  //       paginationContent.style.display = 'block';
-  //     }
+  //     paginationContent.style.display = 'none';
+  //   } else {
+  //     emptyImgTitle.innerHTML = '';
+  //     paginationContent.style.display = 'block';
   //   }
-  //   checkLocalStorage();
+  // }
+  // checkLocalStorage();
 
   function showPage(page) {
     const startIndex = (page - 1) * itemsPerPage;
@@ -40,17 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const cardContainer = document.createElement('div');
       cardContainer.classList.add('kard-in');
 
-      const { webformatURL, title, description, author, linkAmazon, linkBook } =
-        card;
-
-      cardContainer.innerHTML = cardListMarkup({
-        webformatURL,
-        title,
-        description,
-        author,
-        linkAmazon,
-        linkBook,
-      });
+      cardContainer.innerHTML = cardListMarkup(card);
 
       paginationContent.appendChild(cardContainer);
     });

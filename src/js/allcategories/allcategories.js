@@ -5,6 +5,7 @@ const h1El = document.querySelector('h1');
 const listBooks = document.querySelector(".wrapper-categories");
 const booksCategoryDiv = document.querySelector('.best-categories'); 
 const bestSellerH1 = document.querySelector('.bestseller-title');
+const bestsellerContainer = document.querySelector('.container.bestseller');
 
 // Function to change color of the last word in an h1 element
 function changeLastWordColor(element, color) {
@@ -37,15 +38,18 @@ function createMarkup(arr) {
     });
 }
 
+
+
 // Handle click on a category and render books
 function handleListItemClick(event) {
     const categoryName = event.target.textContent;
-
     listBooks.innerHTML = ''; // Clear previous category
     booksCategoryDiv.innerHTML = ''; // Clear bestseller category
     bestSellerH1.innerHTML = ''; // Clear H1 bestseller category
     h1El.innerHTML = ''; // Clear H1 category
 
+    bestsellerContainer.innerHTML = '';
+  
     const h1Element = document.createElement('h1');
     h1Element.textContent = categoryName;
     h1Element.classList.add('container');

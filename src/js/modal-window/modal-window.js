@@ -11,6 +11,18 @@ bookElements.forEach(bookElement => {
   });
 });
 
+const bestCategories = document.querySelector('.best-categories');
+
+bestCategories.addEventListener('click', event => {
+  const bookCoverTop = event.target.closest('.book-cover-top');
+
+  if (bookCoverTop) {
+    const bookId = bookCoverTop.dataset.id;
+    fetchBookData(bookId);
+  }
+});
+modal.classList.add('modal-open');
+
 function updateModalContentNew(bookData) {
   const title = bookData.list_name;
   const author = bookData.author;

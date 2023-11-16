@@ -63,11 +63,11 @@
   box-sizing: border-box;
 }
 
-.row {
+/* .row {
   display: grid;
   grid-template-columns: 356px 1fr;
   gap: 40px;
-}
+} */
 
 .header-container-2 {
   display: flex;
@@ -77,4 +77,21 @@
 
 .flex {
   display: flex;
+}
+
+@media only screen and (min-width: 1440px) {
+  .row {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .main-side {
+    display: flex;
+    gap: 32px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .main-side {
+    display: block;
+  }
 }

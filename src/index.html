@@ -1,46 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+    <title>Bookshelf</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
-  <title>Bookshelf</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="./css/index.css" />
-  <link rel="stylesheet" href="./css/styles.css" />
-</head>
+  <body class="body dark-theme">
+    <header>
+      <load src="partials/header.html" />
+      <load src="partials/signup.html" />
+    </header>
 
-<body class="body dark-theme">
-  <header>
-    <load src="partials/header.html" />
-    <load src="partials/signup.html" />
-  </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <aside class="main-side">
+            <load src="partials/allcategories.html" />
+            <load src="partials/support-ukraine.html" />
+          </aside>
+          <div>
+            <load src="partials/bestseller.html" />
+            <load src="partials/modal-window.html" />
 
-  <main>
-    <div class="container">
-      <div class="row">
-        <aside>
-          <load src="partials/allcategories.html" />
-          <load src="partials/support-ukraine.html" />
-        </aside>
-        <div>
-          <load src="partials/bestseller.html" />
-          <load src="partials/modal-window.html" />
-
-          <load src="partials/scroll-up.html" />
-          <load src="partials/loader.html" />
+            <load src="partials/scroll-up.html" />
+            <load src="partials/loader.html" />
+          </div>
         </div>
       </div>
-    </div>
-  </main>
+    </main>
 
-  <script type="module" src="/index.js"></script>
-</body>
-
+    <script type="module" src="/index.js"></script>
+  </body>
 </html>

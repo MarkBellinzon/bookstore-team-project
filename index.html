@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+    <title>Bookshelf</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    
+    
+    <script type="module" crossorigin src="/bookstore-team-project/assets/vendor-1d124a32.js"></script>
+    <script type="module" crossorigin src="/bookstore-team-project/assets/loader-a6d6134d.js"></script>
+    <link rel="stylesheet" href="/bookstore-team-project/assets/loader-7aa05bd9.css">
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
-  <title>Bookshelf</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
-    rel="stylesheet" />
-  
-  
-  <script type="module" crossorigin src="/bookstore-team-project/assets/vendor-1d124a32.js"></script>
-  <script type="module" crossorigin src="/bookstore-team-project/assets/loader-46f8d2ec.js"></script>
-  <link rel="stylesheet" href="/bookstore-team-project/assets/loader-208d6642.css">
-</head>
-
-<body class="body dark-theme">
-  <header>
-    <header class="header">
+  <body class="body dark-theme">
+    <header>
+      <header class="header">
   <div class="header-container">
     <div class="flex">
       <div class="headerlogo-link">
@@ -87,7 +90,7 @@
     </div>
   </div>
 </header>
-    <!-- authorization modal -->
+      <!-- authorization modal -->
 <div class="authorization_backdrop is-hidden" data-modal>
   <div class="box"></div>
   <div class="authorization_modal">
@@ -206,20 +209,20 @@
   </div>
 </div>
 
-  </header>
+    </header>
 
-  <main>
-    <div class="container">
-      <div class="row">
-        <aside>
-          <!-- Sidebar Categories -->
+    <main>
+      <div class="container">
+        <div class="row">
+          <aside class="main-side">
+            <!-- Sidebar Categories -->
 
 <scroll-container class="sidebar">
   <ul class="list-categories">
     <li class="allcategories-item">All categories</li>
   </ul>
 </scroll-container>
-          <div class="container-ua">
+            <div class="container-ua">
     <div class="header-ua">
         <h4 class="support-uk">Support Ukraine</h4>
         <img class="herb" src="/bookstore-team-project/assets/herb-d0555d30.svg" alt="herb">
@@ -239,16 +242,16 @@
         <img class="hide-button" src="/bookstore-team-project/assets/buttonUp-203dbf24.svg" alt="Show Less Button" style="display: none;">
     </div>
 </div>
-        </aside>
-        <div>
-          <div class="container bestseller">
+          </aside>
+          <div>
+            <div class="container bestseller">
   <h1 class="bestseller-title">
     Best Sellers <span class="title-span">Books</span>
   </h1>
   <div class="best-categories"></div>
 </div>
 
-          <div class="modal-overlay" id="modalOverlay">
+            <div class="modal-overlay" id="modalOverlay">
   <div id="bookModal" class="modal">
     <div class="modal-content">
       <span class="close-modal-btn">
@@ -286,21 +289,20 @@
 </div>
 
 
-          <div>
+            <div>
     <button type="button" class="scroll-up scroll-hide"></button>
 </div>
-          <div class="loader">
+            <div class="loader">
     <div class="loader-container">
         <div class="loader-item"></div>
         <div class="loader-item"></div>
     </div>
 </div>
+          </div>
         </div>
       </div>
-    </div>
-  </main>
+    </main>
 
-  
-</body>
-
+    
+  </body>
 </html>

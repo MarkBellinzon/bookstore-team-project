@@ -42,12 +42,17 @@ export function createBookMarkup(books) {
   return books
     .map(
       ({ _id, book_image, author, title }) => `<li class="book-list-top-item">
-            <img
-              class="book-cover-top"
-              data-book-id="${_id}"
-              src="${book_image}"
-              alt="book-cover"
-            />
+      <div class="thumb">      
+        <img
+          class="book-cover-top"
+          data-book-id="${_id}"
+          src="${book_image}"
+          alt="book-cover"
+        />
+        <div class="anim-card">
+          <p class="quick-view">quick view</p>
+        </div>
+      </div>
             <p class="book-title-top">${title}</p>
             <p class="book-author-top">${author}</p>
           </li>`

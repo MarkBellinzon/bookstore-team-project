@@ -60,8 +60,6 @@ export function createBookMarkup(books) {
         </li>`}).join('');
 };
 
-        </li>`
-    )
-    .join('');
-}
+
+
 

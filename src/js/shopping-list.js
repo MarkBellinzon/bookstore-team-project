@@ -9,27 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const nextButton = document.querySelector('.next-page');
   const pageNum = document.querySelector('.page-num');
 
-  // function checkLocalStorage() {
-  //   const emptyImgTitle = document.querySelector('.empty-img-title');
-  //   if (!localStorage || !localStorage.getItem('savedBooks')) {
-  //     emptyImgTitle.innerHTML = `<p class="shoping-text">
-  //         This page is empty, add some books and proceed to order.
-  //       </p>
-  //       <img
-  //         class="img-shoping-list"
-  //         srcset="./img/IMG_9606@1x.png 1x, ./img/IMG_9606@2x.png 2x"
-  //         src="./img/IMG_96061@1x.png"
-  //         alt="Books"
-  //         width="322"
-  //       />`;
-  //     paginationContent.style.display = 'none';
-  //   } else {
-  //     emptyImgTitle.innerHTML = '';
-  //     paginationContent.style.display = 'block';
-  //   }
-  // }
-  // checkLocalStorage();
-
   function showPage(page) {
     const startIndex = (page - 1) * itemsPerPage;
     const endIndex = startIndex + itemsPerPage;
@@ -42,6 +21,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
       cardContainer.innerHTML = cardListMarkup(card);
 
+      const deleteButton = cardContainer.querySelector('.delete-shoping-list');
+      deleteButton.addEventListener('click', () => removeCard(card));
+
       paginationContent.appendChild(cardContainer);
     });
 
@@ -51,11 +33,16 @@ document.addEventListener('DOMContentLoaded', function () {
     nextButton.disabled = page === totalPages;
   }
 
+  function removeCard(card) {
+    const updatedCards = cards.filter(item => item.title !== card.title);
+    localStorage.setItem('savedBooks', JSON.stringify(updatedCards));
+    updatePagination();
+  }
+
   function updatePagination() {
     totalPages = Math.ceil(cards.length / itemsPerPage);
     showPage(currentPage);
   }
-  checkLocalStorage();
   showPage(currentPage);
 
   prevButton.addEventListener('click', function () {
@@ -73,6 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
   updatePagination();
 });
+
 function cardListMarkup({
   webformatURL,
   title,

@@ -1,11 +1,12 @@
 const bookElements = document.querySelectorAll('.book');
 const modal = document.getElementById('bookModal');
 const bookInfo = document.getElementById('bookInfoModal');
+let currentBookData;
 
 bookElements.forEach(bookElement => {
   bookElement.addEventListener('click', () => {
-    const bookData = getBookData();
-    updateModalContent(bookData);
+    currentBookData = getBookData();
+    updateModalContent(currentBookData);
     modal.style.display = 'block';
     document.addEventListener('keydown', handleEscKeyPress);
   });
@@ -85,28 +86,22 @@ function toggleShoppingList() {
     successMessage.style.display = 'block';
     inShoppingList = true;
 
-    const selectedBook = {
-      title,
-      author,
-      description,
-      image,
-      amazon,
-      appleBooks,
-    };
+    const selectedBook = currentBookData;
 
     // Додав обрану книгу у localStorage
     addToShoppingList(selectedBook);
   }
 }
-
-// Функція для додавання книги до списку покупок в localStorage
 function addToShoppingList(book) {
-  // Отримуємо поточний список книг з localStorage
   const shoppingList = JSON.parse(localStorage.getItem('shoppingList')) || [];
-
-  // Додав нову книгу до списку
   shoppingList.push(book);
-
-  // Зберіг оновлений список у localStorage
   localStorage.setItem('shoppingList', JSON.stringify(shoppingList));
+}
+
+function removeFromShoppingList(book) {
+  const shoppingList = JSON.parse(localStorage.getItem('shoppingList')) || [];
+  const updatedShoppingList = shoppingList.filter(
+    item => item.title !== book.title
+  );
+  localStorage.setItem('shoppingList', JSON.stringify(updatedShoppingList));
 }

@@ -143,7 +143,7 @@ input[type='checkbox']:checked ~ .check::after {
   width: 28px;
   height: 28px;
   fill: #111;
-  transition: fill var(--animation);
+  /* transition: fill var(--animation); */
 }
 
 .mob-burger:hover {
@@ -174,7 +174,7 @@ input[type='checkbox']:checked ~ .check::after {
 }
 
 .burger-container {
-  /* background-image: url(../images/background-colors.png); */
+  background-image: url(../img/header/background-colors.png);
   background-position: bottom;
   background-repeat: no-repeat;
   padding: 0;
@@ -214,7 +214,7 @@ input[type='checkbox']:checked ~ .check::after {
   width: 28px;
   height: 28px;
   fill: #111;
-  transition: fill var(--animation);
+  /* transition: fill var(--animation); */
 }
 
 .close-btn:hover {

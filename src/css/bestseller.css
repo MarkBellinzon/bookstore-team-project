@@ -15,7 +15,7 @@
 }
 
 .bestseller-title {
-  color: #111;
+  color: var(--black-color);
   font-size: 32px;
   font-weight: 700;
   line-height: 38px;
@@ -29,6 +29,12 @@
     line-height: 52px;
     letter-spacing: -1.92px;
     margin: 40px 0;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .bestseller-title {
+    margin-top: 0;
   }
 }
 
@@ -49,14 +55,14 @@
 }
 
 .title-span {
-  color: #4f2ee8;
+  color: var(--purple-color);
 }
 
 .book-cover-top {
   width: 335px;
   height: 485px;
   border-radius: 8px;
-  margin-bottom: 14px;
+  /* margin-bottom: 14px; */
 }
 
 @media only screen and (min-width: 768px) {
@@ -78,7 +84,7 @@
   padding: 14px 28px;
   align-items: flex-start;
   border-radius: 40px;
-  border: 2px solid #4f2ee8;
+  border: 2px solid var(--purple-color);
   color: #111;
   font-size: 14px;
   font-weight: 700;
@@ -87,12 +93,13 @@
   text-transform: uppercase;
   margin-left: auto;
   margin-bottom: 40px;
+  transition: background-color var(--animation);
 }
 
 .js-see-more-btn:hover,
 .js-see-more-btn:focus {
-  background: #4f2ee8;
-  color: #fff;
+  background-color: var(--purple-color);
+  color: var(--white-color);
 }
 
 @media only screen and (min-width: 768px) {
@@ -151,7 +158,7 @@
 }
 
 .book-title-top {
-  color: #111;
+  color: var(--black-color);
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -162,10 +169,11 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin-top: 14px;
 }
 
 .book-author-top {
-  color: #b4afaf;
+  color: var(--books-title-color);
   font-size: 12px;
   font-style: italic;
   font-weight: 400;
@@ -194,4 +202,45 @@
   .books-category-list {
     column-gap: 24px;
   }
+}
+
+.book-list-top-item .thumb {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.book-list-top-item .anim-card {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+
+  content: '';
+  height: 25%;
+  width: 100%;
+  background: var(--gold-color);
+
+  transition: transform var(--animation);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quick-view {
+  padding: auto 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: var(--black-color);
+}
+
+.book-list-top-item:hover .anim-card {
+  transform: translateY(0);
+}
+
+.book-list-top-item:focus .anim-card {
+  transform: translateY(0);
 }

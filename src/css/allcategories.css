@@ -1,6 +1,6 @@
 /* h1 {
   text-align: center;
-  color: #111;
+  color: var(--black-color);
   font-family: DM Sans;
   font-size: 32px;
   font-style: normal;
@@ -13,7 +13,7 @@
 
 .h1category {
   text-align: left;
-  color: #111;
+  color: var(--black-color);
   font-family: DM Sans;
   font-size: 32px;
   font-style: normal;
@@ -25,7 +25,7 @@
 }
 
 h2 {
-  color: #111;
+  color: var(--black-color);
   font-family: DM Sans;
   font-size: 16px;
   font-style: normal;
@@ -37,7 +37,6 @@ h2 {
 }
 
 @media only screen and (min-width: 768px) {
-
   .h1category {
     text-align: left;
     font-size: 48px;
@@ -90,7 +89,7 @@ h2 {
 }
 
 .list-categories .categories-item {
-  color: rgba(17, 17, 17, 0.6);
+  color: var(--categories-list-color);
   font-family: 'DM Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -111,7 +110,7 @@ h2 {
 /* .list-categories .categories-item:hover,
 .list-categories .categories-item:focus, */
 .list-categories .categories-item:active {
-  color: #4f2ee8;
+  color: var(--purple-color);
   font-family: DM Sans;
   font-size: 16px;
   font-style: normal;
@@ -188,7 +187,7 @@ scroll-container {
 }
 
 .wrapper-categories-author {
-  color: #b4afaf;
+  color: var(--books-title-color);
   font-family: DM Sans;
   font-size: 12px;
   font-style: italic;

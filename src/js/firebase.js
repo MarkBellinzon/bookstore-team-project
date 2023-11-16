@@ -1,5 +1,5 @@
 // Firebase
-// import * as basicLightbox from 'basiclightbox';
+import * as basicLightbox from 'basiclightbox';
 // import 'basiclightbox/dist/basicLightbox.min.css';
 // import { Notify } from 'notiflix/build/notiflix-notify-aio';
 // import { initializeApp } from 'firebase/app';
@@ -12,6 +12,7 @@
 //   signOut,
 // } from 'firebase/auth';
 
+// // Your web app's Firebase configuration
 // const firebaseConfig = {
 //   apiKey: 'AIzaSyCezi-53hV5YmQ3k2WfuLJ3Wrj3pLK40cc',
 //   authDomain: 'bookstore-team-project.firebaseapp.com',
@@ -20,3 +21,6 @@
 //   messagingSenderId: '596875191032',
 //   appId: '1:596875191032:web:e5dc6331f3745911fc510d',
 // };
+
+// // Initialize Firebase
+// const app = initializeApp(firebaseConfig);

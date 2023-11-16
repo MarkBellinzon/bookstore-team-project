@@ -119,7 +119,7 @@
 .success-message-modal {
   display: none;
   width: 240px;
-  color: rgba(17, 17, 17, 0.5);
+  color: var(--disactive-link-color);
   text-align: center;
   font-family: DM Sans, sans-serif;
   font-size: 10px;

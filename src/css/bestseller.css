@@ -85,7 +85,7 @@
   align-items: flex-start;
   border-radius: 40px;
   border: 2px solid var(--purple-color);
-  color: #111;
+  color: var(--black-color);
   font-size: 14px;
   font-weight: 700;
   line-height: 18px;

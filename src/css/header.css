@@ -7,9 +7,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #fff;
+  background: var(--white-color);
   border-radius: 0px 0px 8px 8px;
-  border: 1.5px solid #111;
+  border: 1.5px solid var(--dark-color);
 }
 .headerlogo-link {
 }
@@ -70,7 +70,7 @@
 
 .head-nav-link:hover {
   padding: 7px 16px;
-  background-color: #eac645;
+  background-color: var(--gold-color);
   border-radius: 36px;
   font-weight: 700;
 }
@@ -106,7 +106,7 @@
   }
 }
 /* .logo-bookshelf {
-  fill: #111;
+  fill: var(--dark-color);
 }
 
 
@@ -114,7 +114,7 @@
   position: relative;
   z-index: 3;
   background-color: transparent;
-  fill: #111111;
+  fill: var(--dark-color)111;
 }
 
 .menu-container {
@@ -135,7 +135,7 @@
 }
 
 .close-btn {
-  fill: #111111;
+  fill: var(--dark-color)111;
 }
 
 .navigation {
@@ -149,7 +149,7 @@
 }
 
 .head-nav_item {
-  background-color: #eac645;
+  background-color: var(--gold-color);
   border-radius: 36px;
   padding: 8px 16px;
 }
@@ -163,7 +163,7 @@
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  color: #111111;
+  color: var(--dark-color)111;
 }
 
 .head-nav_logo {

@@ -62,3 +62,19 @@
 ::after {
   box-sizing: border-box;
 }
+
+.row {
+  display: grid;
+  grid-template-columns: 356px 1fr;
+  gap: 40px;
+}
+
+.header-container-2 {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}

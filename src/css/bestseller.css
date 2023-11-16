@@ -1,196 +1,197 @@
 .bestseller {
-    width: 335px;
+  width: 335px;
 }
 
 @media only screen and (min-width: 768px) {
-    .bestseller {
-        width: 704px;
-    }
+  .bestseller {
+    width: 704px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
-    .bestseller {
-        width: 996px;
-    }
+  .bestseller {
+    width: 996px;
+  }
 }
 
 .bestseller-title {
-    color: #111;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 38px;
-    letter-spacing: -1.28px;
-    text-align: left;
+  color: #111;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: -1.28px;
+  text-align: left;
 }
 
 @media only screen and (min-width: 768px) {
-    .bestseller-title {
-        font-size: 48px;
-        line-height: 52px;
-        letter-spacing: -1.92px;
-    }
+  .bestseller-title {
+    font-size: 48px;
+    line-height: 52px;
+    letter-spacing: -1.92px;
+    margin: 40px 0;
+  }
 }
 
 .category-title {
-    color: #B4AFAF;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-    margin-bottom: 18px;
+  color: #b4afaf;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
 }
 
 @media only screen and (min-width: 768px) {
-.category-title {
+  .category-title {
     line-height: 24px;
-    }
+  }
 }
 
 .title-span {
-    color: #4F2EE8;
+  color: #4f2ee8;
 }
 
 .book-cover-top {
-    width: 335px;
-    height: 485px;
-    border-radius: 8px;
-    margin-bottom: 14px;
-
+  width: 335px;
+  height: 485px;
+  border-radius: 8px;
+  margin-bottom: 14px;
 }
 
 @media only screen and (min-width: 768px) {
-    .book-cover-top {
-        width: 218px;
-        height: 316px;
-    }
+  .book-cover-top {
+    width: 218px;
+    height: 316px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
-    .book-cover-top {
-        width: 180px;
-        height: 256px;
-    }
+  .book-cover-top {
+    width: 180px;
+    height: 256px;
+  }
 }
 
 .js-see-more-btn {
-    display: flex;
-    padding: 14px 28px;
-    align-items: flex-start;
-    border-radius: 40px;
-    border: 2px solid #4F2EE8;
-    color: #111;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 18px;
-    letter-spacing: -0.14px;
-    text-transform: uppercase;
-    margin-left: auto;
-    margin-bottom: 40px;
+  display: flex;
+  padding: 14px 28px;
+  align-items: flex-start;
+  border-radius: 40px;
+  border: 2px solid #4f2ee8;
+  color: #111;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: -0.14px;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-bottom: 40px;
 }
 
-.js-see-more-btn:hover, .js-see-more-btn:focus {
-    background: #4F2EE8;
-    color: #FFF;
-}
-
-@media only screen and (min-width: 768px) {
-.js-see-more-btn {
-    display: flex;
-    }
-}
-
-.book-list-top-item {
-    display: flex;
-    width: 335px;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 8px;
+.js-see-more-btn:hover,
+.js-see-more-btn:focus {
+  background: #4f2ee8;
+  color: #fff;
 }
 
 @media only screen and (min-width: 768px) {
+  .js-see-more-btn {
+    display: flex;
+  }
+}
+
 .book-list-top-item {
-        width: 218px;
-        margin-bottom: 20px;
-    }
+  display: flex;
+  width: 335px;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .book-list-top-item {
+    width: 218px;
+    margin-bottom: 20px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
-    .book-list-top-item {
-        width: 180px;
-        margin-bottom: 32px;
-    }
+  .book-list-top-item {
+    width: 180px;
+    margin-bottom: 32px;
+  }
 }
 
 .book-list-top-item:not(:first-child) {
-    display: none;
+  display: none;
 }
 
 @media only screen and (min-width: 768px) {
-    .book-list-top-item:nth-child(-n + 3) {
-        display: block;
-    }
+  .book-list-top-item:nth-child(-n + 3) {
+    display: block;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
-    .book-list-top-item:nth-child(n) {
-        display: block;
-    }
+  .book-list-top-item:nth-child(n) {
+    display: block;
+  }
 }
 
 .book-list-top {
-    display: flex;
-    gap: 25px;
+  display: flex;
+  gap: 25px;
 }
 
 @media only screen and (min-width: 1440px) {
-.book-list-top {
+  .book-list-top {
     gap: 24px;
-    }
+  }
 }
 
 .book-title-top {
-    color: #111;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 18px;
-    letter-spacing: -0.64px;
-    text-transform: uppercase;
-    margin-bottom: 4px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  color: #111;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: -0.64px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .book-author-top {
-    color: #B4AFAF;
-    font-size: 12px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 14px;
-    letter-spacing: -0.48px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  color: #b4afaf;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: -0.48px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .books-category-list {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 40px;
-    column-gap: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  column-gap: 24px;
 }
 
 @media only screen and (min-width: 768px) {
-.books-category-list {
+  .books-category-list {
     row-gap: 20px;
     column-gap: 25px;
-    }
+  }
 }
 
 @media only screen and (min-width: 1440px) {
-.books-category-list {
+  .books-category-list {
     column-gap: 24px;
-    }
+  }
 }

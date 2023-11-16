@@ -4,7 +4,7 @@ import Swiper from 'swiper';
 // Ініціалізація Swiper
 const mySwiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
-  spaceBetween: 15,
+  spaceBetween: 10,
   loop: false,
   pagination: {
     el: '.swiper-pagination',
@@ -20,7 +20,7 @@ supportUrlArray.forEach((item, index) => {
   const slide = document.createElement('div');
   slide.classList.add('swiper-slide');
 
-  if (index >= 6) {
+  if (index >= 7) {
     slide.classList.add('hidden-slide');
   }
 
@@ -31,7 +31,7 @@ supportUrlArray.forEach((item, index) => {
   // Додано обробник події для зображення
   image.addEventListener('click', () => {
     console.log('Image clicked:', item.url);
-    window.open(item.url, '_blank'); // відкриття посилання в новій вкладці
+    window.location.href = item.url;
   });
 
   slide.appendChild(image);

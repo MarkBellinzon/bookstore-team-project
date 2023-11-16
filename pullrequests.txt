@@ -3,6 +3,10 @@
   |     Victoria
   |============================
 */
+https://github.com/MarkBellinzon/bookstore-team-project/pull/33
+https://github.com/MarkBellinzon/bookstore-team-project/pull/30
+https://github.com/MarkBellinzon/bookstore-team-project/pull/26
+https://github.com/MarkBellinzon/bookstore-team-project/pull/13
 
 
 
@@ -13,6 +17,15 @@
 */
 
 https://github.com/MarkBellinzon/bookstore-team-project/pull/11
+https://github.com/MarkBellinzon/bookstore-team-project/pull/37
+https://github.com/MarkBellinzon/bookstore-team-project/pull/29
+https://github.com/MarkBellinzon/bookstore-team-project/pull/25
+https://github.com/MarkBellinzon/bookstore-team-project/pull/19
+https://github.com/MarkBellinzon/bookstore-team-project/pull/18
+https://github.com/MarkBellinzon/bookstore-team-project/pull/16
+https://github.com/MarkBellinzon/bookstore-team-project/pull/11
+https://github.com/MarkBellinzon/bookstore-team-project/pull/3
+
 
 
 /**
@@ -21,38 +34,70 @@ https://github.com/MarkBellinzon/bookstore-team-project/pull/11
   |============================
 */
 https://github.com/MarkBellinzon/bookstore-team-project/pull/12
+https://github.com/MarkBellinzon/bookstore-team-project/pull/41
+https://github.com/MarkBellinzon/bookstore-team-project/pull/20
+https://github.com/MarkBellinzon/bookstore-team-project/pull/12
+https://github.com/MarkBellinzon/bookstore-team-project/pull/9
+https://github.com/MarkBellinzon/bookstore-team-project/pull/42
+https://github.com/MarkBellinzon/bookstore-team-project/pull/43
+https://github.com/MarkBellinzon/bookstore-team-project/pull/46
+https://github.com/MarkBellinzon/bookstore-team-project/pull/48
+
 /**
   |============================
   |     Roman Kovalchuk
   |============================
 */
+https://github.com/MarkBellinzon/bookstore-team-project/pull/35
+https://github.com/MarkBellinzon/bookstore-team-project/pull/32
+https://github.com/MarkBellinzon/bookstore-team-project/pull/24
+https://github.com/MarkBellinzon/bookstore-team-project/pull/22
+https://github.com/MarkBellinzon/bookstore-team-project/pull/6
+https://github.com/MarkBellinzon/bookstore-team-project/pull/47
+
 
 /**
   |============================
   |     Irina Trysh
   |============================
 */
+https://github.com/MarkBellinzon/bookstore-team-project/pull/40
+https://github.com/MarkBellinzon/bookstore-team-project/pull/15
+
 
 /**
   |============================
   |     Karina Kramarenko
   |============================
 */
+https://github.com/MarkBellinzon/bookstore-team-project/pull/17
 
 /**
   |============================
   |     Olexandr Polischuk
   |============================
 */
+https://github.com/MarkBellinzon/bookstore-team-project/pull/36
+https://github.com/MarkBellinzon/bookstore-team-project/pull/27
+https://github.com/MarkBellinzon/bookstore-team-project/pull/23
+https://github.com/MarkBellinzon/bookstore-team-project/pull/14
+https://github.com/MarkBellinzon/bookstore-team-project/pull/8
+https://github.com/MarkBellinzon/bookstore-team-project/pull/7
+https://github.com/MarkBellinzon/bookstore-team-project/pull/1
+https://github.com/MarkBellinzon/bookstore-team-project/pull/44
 
 /**
   |============================
   |      Iris K
   |============================
 */
+https://github.com/MarkBellinzon/bookstore-team-project/pull/38
+https://github.com/MarkBellinzon/bookstore-team-project/pull/34
+
 
 /**
   |============================
   |       Teamlead
   |============================
 */
+https://github.com/MarkBellinzon/bookstore-team-project/pull/2

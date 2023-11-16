@@ -29,8 +29,6 @@
 .support-ukraine {
     margin: 0;
     margin-right: 10px;
-    color: #FFF;
-    letter-spacing: -0.96px;
 }
 
 .swiper-container {
@@ -57,8 +55,7 @@
     top: 0;
     width: 100%;
     max-width: 100%;
-
-
+    filter: brightness(0) invert(1);
     list-style-type: none;
     padding: 0;
     text-align: left;
@@ -97,8 +94,6 @@
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
     visibility: visible;
-    gap: 20px;
-
 }
 
 .ol {
@@ -122,8 +117,6 @@
     box-sizing: border-box;
     text-align: left;
     cursor: pointer;
-    margin-bottom: 8%;
-
 }
 
 .slide-number {

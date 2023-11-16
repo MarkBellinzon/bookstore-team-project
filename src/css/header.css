@@ -1,12 +1,12 @@
 .header {
-  padding: 20px 0;
+  margin-bottom: 20px;
 }
 .header-container {
   height: 64px;
   padding: 24px 32px;
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   background: #fff;
   border-radius: 0px 0px 8px 8px;
   border: 1.5px solid #111;

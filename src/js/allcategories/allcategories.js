@@ -7,6 +7,7 @@ const booksCategoryDiv = document.querySelector('.best-categories');
 const bestSellerH1 = document.querySelector('.bestseller-title');
 const bestsellerContainer = document.querySelector('.container.bestseller');
 
+
 // Function to change color of the last word in an h1 element
 function changeLastWordColor(element, color) {
     const words = element.textContent.split(' ');
@@ -52,8 +53,8 @@ function handleListItemClick(event) {
   
     const h1Element = document.createElement('h1');
     h1Element.textContent = categoryName;
-    h1Element.classList.add('container');
-    h1El.appendChild(h1Element);
+    h1Element.classList.add('h1category');
+    bestsellerContainer.appendChild(h1Element);
 
     // Call the function to change the color of the last word in the h1 element
     changeLastWordColor(h1Element, '#4F2EE8');

@@ -1,5 +1,18 @@
-h1 {
+/* h1 {
   text-align: center;
+  color: #111;
+  font-family: DM Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.1875;
+  letter-spacing: -1.28px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+} */
+
+.h1category {
+  text-align: left;
   color: #111;
   font-family: DM Sans;
   font-size: 32px;
@@ -24,7 +37,8 @@ h2 {
 }
 
 @media only screen and (min-width: 768px) {
-  h1 {
+
+  .h1category {
     text-align: left;
     font-size: 48px;
     line-height: 1.08;
@@ -39,6 +53,10 @@ h2 {
 }
 
 @media only screen and (min-width: 1440px) {
+  .h1category {
+    margin-top: 40px;
+  }
+
   h2 {
     max-width: 180px;
     height: auto;
@@ -79,7 +97,7 @@ h2 {
   font-weight: 400;
   line-height: 1.125;
   letter-spacing: -0.32px;
-  transition: all 0.3s ease;
+  /* transition: all 0.3s ease; */
 }
 
 @media only screen and (min-width: 768px) {
@@ -90,8 +108,8 @@ h2 {
   }
 }
 
-.list-categories .categories-item:hover,
-.list-categories .categories-item:focus,
+/* .list-categories .categories-item:hover,
+.list-categories .categories-item:focus, */
 .list-categories .categories-item:active {
   color: #4f2ee8;
   font-family: DM Sans;

@@ -42,8 +42,8 @@
 }
 
 @media only screen and (min-width: 768px) {
-.category-title {
-    line-height: 24px;
+    .category-title {
+        line-height: 24px;
     }
 }
 
@@ -89,14 +89,15 @@
     margin-bottom: 40px;
 }
 
-.js-see-more-btn:hover, .js-see-more-btn:focus {
+.js-see-more-btn:hover,
+.js-see-more-btn:focus {
     background: #4F2EE8;
     color: #FFF;
 }
 
 @media only screen and (min-width: 768px) {
-.js-see-more-btn {
-    display: flex;
+    .js-see-more-btn {
+        display: flex;
     }
 }
 
@@ -109,7 +110,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-.book-list-top-item {
+    .book-list-top-item {
         width: 218px;
         margin-bottom: 20px;
     }
@@ -144,8 +145,8 @@
 }
 
 @media only screen and (min-width: 1440px) {
-.book-list-top {
-    gap: 24px;
+    .book-list-top {
+        gap: 24px;
     }
 }
 
@@ -158,9 +159,6 @@
     letter-spacing: -0.64px;
     text-transform: uppercase;
     margin-bottom: 4px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .book-author-top {
@@ -170,9 +168,6 @@
     font-weight: 400;
     line-height: 14px;
     letter-spacing: -0.48px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .books-category-list {
@@ -183,14 +178,14 @@
 }
 
 @media only screen and (min-width: 768px) {
-.books-category-list {
-    row-gap: 20px;
-    column-gap: 25px;
+    .books-category-list {
+        row-gap: 20px;
+        column-gap: 25px;
     }
 }
 
 @media only screen and (min-width: 1440px) {
-.books-category-list {
-    column-gap: 24px;
+    .books-category-list {
+        column-gap: 24px;
     }
 }

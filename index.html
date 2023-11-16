@@ -1,95 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
-    />
-    <title>Bookshelf</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
-      rel="stylesheet"
-    />
-    
-    
-    <script type="module" crossorigin src="/bookstore-team-project/assets/vendor-1d124a32.js"></script>
-    <script type="module" crossorigin src="/bookstore-team-project/assets/loader-635150e8.js"></script>
-    <link rel="stylesheet" href="/bookstore-team-project/assets/loader-60b6ab98.css">
-  </head>
-  <body class="body dark-theme">
-    <header>
-      <header class="header">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
+  <title>Bookshelf</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+    rel="stylesheet" />
+  
+  
+  <script type="module" crossorigin src="/bookstore-team-project/assets/vendor-1d124a32.js"></script>
+  <script type="module" crossorigin src="/bookstore-team-project/assets/loader-c3760d04.js"></script>
+  <link rel="stylesheet" href="/bookstore-team-project/assets/loader-fa7502bb.css">
+</head>
+
+<body class="body dark-theme">
+  <header>
+    <header class="header">
   <div class="header-container">
-    <div class="headerlogo-link">
-      <a class="logo-link" href="./index.html">
-        <img
-          class="header-logo"
-          src="/bookstore-team-project/assets/logo-optimized-e9427f09.svg"
-          alt="logo-svg"
-          width="24"
-          height="24"
-        />
-        <img
-          class="logo-bookshelf"
-          src="/bookstore-team-project/assets/Bookshelf_optimized-0dcfd559.svg"
-          alt="Bookshelf"
-          width="77"
-          height="14"
-        />
-      </a>
-    </div>
-    <button
-      class="menu-toggle js-open-menu"
-      aria-controls="mobile-menu"
-      aria-expanded="true"
-    >
-      <img
-        class="mob-burger"
-        width="28"
-        height="28"
-        src="/bookstore-team-project/assets/align-left-27c36070.svg"
-        alt="menu-burger"
-      />
-    </button>
-    <div
-      class="menu-container js-close-menu"
-      id="mobile-menu"
-      aria-controls="mobile-menu"
-      aria-expanded="true"
-    >
-      <button class="menu-toggle js-close-menu" type="button">
-        <img
-          class="close-btn"
-          width="28"
-          height="28"
-          src="/bookstore-team-project/assets/x-close_optimized-3bcf7e05.svg"
-          alt="close-btn"
-        />
-      </button>
+    <div class="flex">
+      <div class="headerlogo-link">
+        <a class="logo-link" href="./index.html">
+          <img class="header-logo" src="/bookstore-team-project/assets/logo-optimized-e9427f09.svg" alt="logo-svg" width="24" height="24" />
+          <img class="logo-bookshelf" src="/bookstore-team-project/assets/Bookshelf_optimized-0dcfd559.svg" alt="Bookshelf" width="77"
+            height="14" />
+        </a>
+      </div>
+
       <nav class="navigation js-header-nav">
         <ul class="head-nav">
           <li class="head-nav-home">
             <a class="head-nav-link" href="./index.html">Home</a>
           </li>
           <li class="head-nav-shop">
-            <a class="head-nav-link" href="./shopping.html"
-              >Shopping list
-              <img
-                class="head-nav-logo"
-                width="20"
-                height="20"
-                src="../img/header/uil_cart_optimized.svg"
-                alt="shopping-logo"
-              />
+            <a class="head-nav-link" href="./shopping.html">Shopping list
+              <img class="head-nav-logo" width="20" height="20" src="../img/header/uil_cart_optimized.svg"
+                alt="shopping-logo" />
             </a>
           </li>
         </ul>
       </nav>
+    </div>
+    <button class="menu-toggle js-open-menu" aria-controls="mobile-menu" aria-expanded="true">
+      <img class="mob-burger" width="28" height="28" src="/bookstore-team-project/assets/align-left-27c36070.svg" alt="menu-burger" />
+    </button>
+    <div class="menu-container js-close-menu" id="mobile-menu" aria-controls="mobile-menu" aria-expanded="true">
+      <button class="menu-toggle js-close-menu" type="button">
+        <img class="close-btn" width="28" height="28" src="/bookstore-team-project/assets/x-close_optimized-3bcf7e05.svg" alt="close-btn" />
+      </button>
+
       <!-- Switcher & buttons -->
       <div class="header-container-2">
         <label class="switch toggle-theme common-toggle">
@@ -119,13 +83,11 @@
               <use href="./images/sprite.svg#icon-login-arrow"></use>
             </svg>
           </button> -->
-        </div>
       </div>
     </div>
   </div>
 </header>
-
-      <!-- authorization modal -->
+    <!-- authorization modal -->
 <div class="authorization_backdrop is-hidden" data-modal>
   <div class="box"></div>
   <div class="authorization_modal">
@@ -244,10 +206,20 @@
   </div>
 </div>
 
-    </header>
+  </header>
 
-    <main>
-      <div class="container-ua">
+  <main>
+    <div class="container">
+      <div class="row">
+        <aside>
+          <!-- Sidebar Categories -->
+
+<scroll-container class="sidebar">
+  <ul class="list-categories">
+    <li class="allcategories-item">All categories</li>
+  </ul>
+</scroll-container>
+          <div class="container-ua">
     <div class="header-ua">
         <h4 class="support-uk">Support Ukraine</h4>
         <img class="herb" src="/bookstore-team-project/assets/herb-d0555d30.svg" alt="herb">
@@ -255,11 +227,8 @@
 
 
     <div class="swiper-container">
-        <div class="swiper-pagination"></div>
         <div class="swiper-wrapper"></div>
         <div class="swiper-wrapper numbered-list"></div>
-        <div class="swiper-slide hidden-slide"></div>
-
     </div>
 
     <div class="swiper-slide hidden-slide"></div>
@@ -270,29 +239,16 @@
         <img class="hide-button" src="/bookstore-team-project/assets/buttonUp-203dbf24.svg" alt="Show Less Button" style="display: none;">
     </div>
 </div>
-      <!-- Sidebar Categories -->
-<aside class="sidebar">
-  <scroll-container class="container">
-    <ul class="list-categories">
-      <li class="allcategories-item">All categories</li>
-    </ul>
-  </scroll-container>
-</aside>
-
-<!-- Main Categories -->
-<h1></h1>
-
-<div class="wrapper-categories container"></div>
-
-
-      <div class="container bestseller">
+        </aside>
+        <div>
+          <div class="container bestseller">
   <h1 class="bestseller-title">
     Best Sellers <span class="title-span">Books</span>
   </h1>
   <div class="best-categories"></div>
 </div>
 
-      <div class="modal-overlay" id="modalOverlay">
+          <div class="modal-overlay" id="modalOverlay">
   <div id="bookModal" class="modal">
     <div class="modal-content">
       <span class="close-modal-btn">
@@ -310,17 +266,21 @@
 </div>
 
 
-      <div>
+          <div>
     <button type="button" class="scroll-up scroll-hide"></button>
 </div>
-      <div class="loader">
+          <div class="loader">
     <div class="loader-container">
         <div class="loader-item"></div>
         <div class="loader-item"></div>
     </div>
 </div>
-    </main>
+        </div>
+      </div>
+    </div>
+  </main>
 
-    
-  </body>
+  
+</body>
+
 </html>

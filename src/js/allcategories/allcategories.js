@@ -43,14 +43,22 @@ function createMarkup(arr) {
 
 // Handle click on a category and render books
 function handleListItemClick(event) {
+    // Remove 'active' class from all li elements
+    const listItems = document.querySelectorAll('.categories-item');
+    listItems.forEach(item => {
+        item.classList.remove('active');
+    });
+
+    // Add 'active' class to the clicked li element
+    event.target.classList.add('active');
+
     const categoryName = event.target.textContent;
     listBooks.innerHTML = ''; // Clear previous category
     booksCategoryDiv.innerHTML = ''; // Clear bestseller category
     bestSellerH1.innerHTML = ''; // Clear H1 bestseller category
     h1El.innerHTML = ''; // Clear H1 category
+    bestsellerContainer.innerHTML = ''; // Clear Caategory See More
 
-    bestsellerContainer.innerHTML = '';
-  
     const h1Element = document.createElement('h1');
     h1Element.textContent = categoryName;
     h1Element.classList.add('h1category');
@@ -68,6 +76,7 @@ function handleListItemClick(event) {
         console.log(error.message);
     });    
 }
+
 
 // Render books for a specific category
 function createMarkupBooks(arr) {

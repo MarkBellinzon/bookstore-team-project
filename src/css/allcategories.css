@@ -83,7 +83,7 @@ h2 {
 }
 
 .list-categories .categories-item {
-  color: rgba(17, 17, 17, 0.6);
+  color: var(--categories-list-color);
   font-family: var(--main-font);
   font-size: 16px;
   font-style: normal;
@@ -116,13 +116,7 @@ h2 {
   text-transform: uppercase;
   color: var(--purple-color);
   font-weight: 700;
-
 }
-
-
-
-
-
 
 scroll-container {
   max-height: 100%;

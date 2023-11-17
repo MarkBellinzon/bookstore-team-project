@@ -1,14 +1,14 @@
-.loader {
+.main-page-loader {
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 999;
+  z-index: 1005;
   background: rgba(192, 179, 238, 0.1);
 }
 
-.loader-container {
+.main-loader-container {
   position: relative;
   width: 80px;
   height: 80px;
@@ -20,7 +20,7 @@
   animation: loader-rotate 3s infinite linear;
 }
 
-.loader-item {
+.main-loader-item {
   position: absolute;
   display: inline-block;
   width: 40px;
@@ -31,7 +31,7 @@
   animation: loader-bounce 3s infinite linear;
 }
 
-.loader-item:last-child {
+.main-loader-item:last-child {
   top: auto;
   bottom: 0;
   animation-delay: -1s;
@@ -54,11 +54,11 @@
   }
 }
 
-.loader-hide .loader {
-  transition: 0.7s opacity;
+.loader-hide .main-page-loader {
+  transition: 0.5s opacity;
   opacity: 0;
 }
 
-.full-load .loader {
+.full-load .main-page-loader {
   display: none;
 }

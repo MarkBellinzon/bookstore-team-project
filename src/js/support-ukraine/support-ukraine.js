@@ -1,17 +1,6 @@
 import { supportUrlArray } from './support-url.js';
 import Swiper from 'swiper';
-
-// Ініціалізація Swiper
-const mySwiper = new Swiper('.swiper-container', {
-  slidesPerView: 1,
-  spaceBetween: 15,
-  loop: false,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-});
-
+console.log(supportUrlArray);
 // Отримання елемента .swiper-wrapper
 const swiperWrapper = document.querySelector('.swiper-wrapper');
 
@@ -20,9 +9,9 @@ supportUrlArray.forEach((item, index) => {
   const slide = document.createElement('div');
   slide.classList.add('swiper-slide');
 
-  if (index >= 6) {
-    slide.classList.add('hidden-slide');
-  }
+  // if (index >= 6) {
+  //   slide.classList.add('hidden-slide');
+  // }
 
   const image = document.createElement('img');
   image.src = item.img;
@@ -44,12 +33,13 @@ supportUrlArray.forEach((item, index) => {
   swiperWrapper.appendChild(slide);
 });
 
-mySwiper.updateSize();
+// mySwiper.updateSize();
 
 // Отримання скритих слайдів та кнопок
 const hiddenSlides = document.querySelectorAll('.swiper-slide.hidden-slide');
 const showButton = document.querySelector('.show-button');
 const hideButton = document.querySelector('.hide-button');
+const swiperContainer = document.querySelector('.swiper-container');
 
 // Додаємо обробники подій для кнопок
 showButton.addEventListener('click', toggleSlidesVisibility);
@@ -57,12 +47,21 @@ hideButton.addEventListener('click', toggleSlidesVisibility);
 
 // Функція для зміни видимості слайдів та кнопок
 function toggleSlidesVisibility() {
-  hiddenSlides.forEach(slide => {
-    slide.classList.toggle('hidden-slide');
-  });
+  swiperContainer.classList.toggle('hide');
 
-  mySwiper.updateSize(); // Оновлюємо розмір Swiper після зміни слайдів
-
-  showButton.style.display = showButton.style.display === 'none' ? 'block' : 'none';
-  hideButton.style.display = hideButton.style.display === 'none' ? 'block' : 'none';
+  showButton.style.display =
+    showButton.style.display === 'none' ? 'block' : 'none';
+  hideButton.style.display =
+    hideButton.style.display === 'none' ? 'block' : 'none';
 }
+
+// Ініціалізація Swiper
+const mySwiper = new Swiper('.swiper-wrapper', {
+  slidesPerView: 2,
+  spaceBetween: 15,
+  loop: false,
+  pagination: {
+    el: '.swiper-slide',
+    clickable: true,
+  },
+});

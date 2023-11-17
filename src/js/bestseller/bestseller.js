@@ -6,10 +6,12 @@ import { fetchCategoryBooks } from './fetchbestseller';
 
 const bestsellerDiv = document.querySelector('.bestseller')
 const booksCategoryDiv = document.querySelector('.best-categories');
+const loader = document.querySelector('#loading');
 
 fetchBestsellers()
     .then(categories => {
-        booksCategoryDiv.innerHTML = createCategoryMarkup(categories);     
+        hideLoading();
+        booksCategoryDiv.innerHTML = createCategoryMarkup(categories);
     })
     .catch((err) => {
         console.error(err);
@@ -20,6 +22,7 @@ fetchBestsellers()
 bestsellerDiv.addEventListener('click', seeMoreHandler);
 
 function seeMoreHandler(evt) {
+
     const seeMore = evt.target;
     if (!evt.target.classList.contains('js-see-more-btn')) {
         return;
@@ -41,12 +44,15 @@ function seeMoreHandler(evt) {
                 ${createBookMarkup(books)}                  
                 </ul>                             
             </div>`
-
             bestsellerDiv.querySelectorAll('.book-list-top-item').forEach((item) => item.style.display = 'block');
+            
         })
         .catch((err) => {
             console.error(err);
             Notiflix.Notify.failure('Sorry, there are no books found. Please try again!');
-        }); 
+        });
     };
 
+    function hideLoading() {
+    loader.classList.remove('display');
+};

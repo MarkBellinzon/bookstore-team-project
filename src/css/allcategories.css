@@ -1,20 +1,7 @@
-/* h1 {
-  text-align: center;
-  color: #111;
-  font-family: DM Sans;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.1875;
-  letter-spacing: -1.28px;
-  margin-top: 40px;
-  margin-bottom: 40px;
-} */
-
 .h1category {
   text-align: left;
-  color: #111;
-  font-family: DM Sans;
+  color: var(--black-color);
+  font-family: var(--main-font);
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -25,8 +12,8 @@
 }
 
 h2 {
-  color: #111;
-  font-family: DM Sans;
+  color: var(--black-color);
+  font-family: var(--main-font);
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -37,7 +24,6 @@ h2 {
 }
 
 @media only screen and (min-width: 768px) {
-
   .h1category {
     text-align: left;
     font-size: 48px;
@@ -59,7 +45,6 @@ h2 {
 
   h2 {
     max-width: 180px;
-    height: auto;
   }
 }
 
@@ -67,13 +52,20 @@ h2 {
   width: 335px;
   height: 228px;
   overflow-y: auto;
+  margin-bottom: 40px;
 }
 
 @media only screen and (min-width: 768px) {
   .sidebar {
-    width: 328px;
+    width: 337px;
     height: 472px;
-    margin-bottom: 83px;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .sidebar {
+    margin-bottom: 86px;
   }
 }
 
@@ -81,6 +73,7 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 768px) {
@@ -91,28 +84,25 @@ h2 {
 
 .list-categories .categories-item {
   color: rgba(17, 17, 17, 0.6);
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--main-font);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.125;
   letter-spacing: -0.32px;
-  /* transition: all 0.3s ease; */
 }
 
 @media only screen and (min-width: 768px) {
   .list-categories .categories-item {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.33;
     letter-spacing: -0.36px;
   }
 }
 
-/* .list-categories .categories-item:hover,
-.list-categories .categories-item:focus, */
 .list-categories .categories-item:active {
-  color: #4f2ee8;
-  font-family: DM Sans;
+  color: var(--purple-color);
+  font-family: var(--main-font);
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -121,6 +111,18 @@ h2 {
   text-transform: uppercase;
   cursor: pointer;
 }
+
+.categories-item.active {
+  text-transform: uppercase;
+  color: var(--purple-color);
+  font-weight: 700;
+
+}
+
+
+
+
+
 
 scroll-container {
   max-height: 100%;
@@ -162,14 +164,14 @@ scroll-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: start;
-    gap: 25px;
+    column-gap: 24px;
+    row-gap: 40px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .wrapper-categories {
     grid-template-columns: repeat(5, 1fr);
-    gap: 24px;
   }
 }
 
@@ -188,8 +190,8 @@ scroll-container {
 }
 
 .wrapper-categories-author {
-  color: #b4afaf;
-  font-family: DM Sans;
+  color: var(--books-title-color);
+  font-family: var(--main-font);
   font-size: 12px;
   font-style: italic;
   font-weight: 400;

@@ -17,7 +17,7 @@
 //   } else {
 //     body.classList.add('dark-theme');
 //     localStorage.setItem('saveTheme', Theme.DARK);
-//     checkboxTheme.checked = true;
+//     checkboxTheme.checked = true ;
 //   }
 // }
 // const saveTheme = localStorage.getItem('saveTheme');

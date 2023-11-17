@@ -21,6 +21,8 @@
   line-height: 38px;
   letter-spacing: -1.28px;
   text-align: left;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -29,6 +31,8 @@
     line-height: 52px;
     letter-spacing: -1.92px;
     margin: 40px 0;
+    margin-top: 78px;
+
   }
 }
 
@@ -286,4 +290,80 @@
 
 #loading.display {
   visibility: visible;
+}
+
+
+
+
+
+/* .list-categories .allcategories-item .all-categories-link {
+  color: rgba(17, 17, 17, 0.6);
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125;
+  letter-spacing: -0.32px;
+}
+
+@media only screen and (min-width: 768px) {
+  .list-categories .allcategories-item .all-categories-link {
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.36px;
+  }
+}
+
+.list-categories .allcategories-item .all-categories-link:active {
+  color: var(--purple-color);
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.125;
+  letter-spacing: -0.32px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.all-categories-link.active {
+  text-transform: uppercase;
+  color: var(--purple-color);
+  font-weight: 700;
+} */
+
+.list-categories .allcategories-item .all-categories-link {
+  color: rgba(17, 17, 17, 0.6);
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125;
+  letter-spacing: -0.32px;
+}
+
+@media only screen and (min-width: 768px) {
+  .list-categories .allcategories-item .all-categories-link {
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.36px;
+  }
+}
+
+.list-categories .allcategories-item .all-categories-link:active {
+  color: var(--purple-color);
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.125;
+  letter-spacing: -0.32px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.all-categories-link.active {
+  text-transform: uppercase;
+  color: var(--purple-color);
+  font-weight: 700;
 }

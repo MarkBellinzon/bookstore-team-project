@@ -2,8 +2,8 @@
   margin-bottom: 20px;
 }
 .header-container {
-  background-color: #fff;
-  border: 1.5px solid #111;
+  background-color: var(--white-color);
+  border: 1.5px solid var(--black-color);
   border-radius: 0px 0px 8px 8px;
   display: flex;
   justify-content: space-between;
@@ -22,7 +22,7 @@
   letter-spacing: -0.04em;
   display: flex;
   align-items: center;
-  color: #111;
+  color: var(--black-color);
 }
 
 .menu-toggle {
@@ -64,7 +64,7 @@
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  color: #111111;
+  color: var(--black-color)111;
 } */
 
 .site-nav__link {
@@ -76,14 +76,14 @@
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  color: #111;
+  color: var(--black-color);
   transition: background-color 0.3s ease-in-out;
 }
 
 .head-nav-logo {
   width: 20px;
   height: 20px;
-  fill: #111;
+  fill: var(--black-color);
   margin-left: 4px;
 }
 
@@ -95,7 +95,7 @@
   left: 0;
   transform: translateY(-100%);
   z-index: 20;
-  background: linear-gradient(#4f2ee8 0%, #fff 130%);
+  background: linear-gradient(var(--purple-color) 0%, var(--white-color) 130%);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -116,13 +116,13 @@
 }
 
 .mob-burger:hover {
-  fill: #4f2ee8;
+  fill: var(--purple-color);
 }
 
 .mob-burger {
   width: 28px;
   height: 28px;
-  fill: #111;
+  fill: var(--black-color);
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -144,11 +144,11 @@
 .close-btn {
   width: 28px;
   height: 28px;
-  fill: #111;
+  fill: var(--black-color);
 }
 
 .close-btn:hover {
-  fill: #4f2ee8;
+  fill: var(--purple-color);
 }
 
 .navigation-burger {

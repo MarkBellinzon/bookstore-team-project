@@ -14,57 +14,73 @@
     
     
     <script type="module" crossorigin src="/bookstore-team-project/assets/vendor-1d124a32.js"></script>
-    <script type="module" crossorigin src="/bookstore-team-project/assets/loader-308ff3b2.js"></script>
-    <link rel="stylesheet" href="/bookstore-team-project/assets/loader-05d1fc84.css">
+    <script type="module" crossorigin src="/bookstore-team-project/assets/loader-b7693314.js"></script>
+    <link rel="stylesheet" href="/bookstore-team-project/assets/loader-52165fa9.css">
   </head>
   <body>
     <header class="header">
-  <div class="header-container">
+  <div class="header-container  container">
     <div class="flex">
       <div class="headerlogo-link">
-        <a class="logo-link" href="./index.html">
-          <img class="header-logo" src="/bookstore-team-project/assets/logo-optimized-e9427f09.svg" alt="logo-svg" width="24" height="24" />
-          <img class="logo-bookshelf" src="/bookstore-team-project/assets/Bookshelf_optimized-0dcfd559.svg" alt="Bookshelf" width="77"
-            height="14" />
-        </a>
+        <a class="header-logo" href="./index.html">
+          <img class="logo-svg" src="/bookstore-team-project/assets/logo-optimized-e9427f09.svg" alt="logo-svg" width="24"
+            height="24" />Bookshelf</a>
       </div>
 
       <nav class="navigation js-header-nav">
-        <ul class="head-nav">
-          <li class="head-nav-home">
-            <a class="head-nav-link" href="./index.html">Home</a>
+        <ul class="site-nav">
+          <li class="site-nav__item_active">
+            <a class="site-nav__link_active" href="./index.html">Home</a>
           </li>
-          <li class="head-nav-shop">
-            <a class="head-nav-link" href="./shopping.html">Shopping list
-              <img class="head-nav-logo" width="20" height="20" src="../img/header/uil_cart_optimized.svg"
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="./shopping.html">Shopping list
+              <img class="head-nav-logo" width="20" height="20" src="/bookstore-team-project/assets/uil_cart_optimized-31892e4d.svg"
                 alt="shopping-logo" />
             </a>
           </li>
         </ul>
       </nav>
     </div>
-    <button class="menu-toggle js-open-menu" aria-controls="mobile-menu" aria-expanded="true">
-      <img class="mob-burger" width="28" height="28" src="/bookstore-team-project/assets/align-left-27c36070.svg" alt="menu-burger" />
-    </button>
-    <div class="menu-container js-close-menu" id="mobile-menu" aria-controls="mobile-menu" aria-expanded="true">
-      <button class="menu-toggle js-close-menu" type="button">
+
+    <div class="mobile-menu-container">
+      <button class="burger-menu js-open-menu" aria-controls="mobile-menu" aria-expanded="true" type="button">
+        <img class="mob-burger" width="28" height="28" src="/bookstore-team-project/assets/align-left-27c36070.svg" alt="menu-burger" />
+      </button>
+      <button class="mob-btn-close js-close-menu" aria-controls="mobile-menu" aria-expanded="true" type="button">
         <img class="close-btn" width="28" height="28" src="/bookstore-team-project/assets/x-close_optimized-3bcf7e05.svg" alt="close-btn" />
       </button>
-
-      <!-- Switcher & buttons -->
-      <div class="header-container-2">
-        <label class="switch toggle-theme common-toggle">
-          <input type="checkbox" class="js-switch-theme" />
-          <span class="slider round"></span>
-        </label>
-        <button type="button" class="user-sign-up" data-modal-open>
-          <span class="user-sign-up-text">Sign up</span>
-          <svg width="23" height="26" class="user-sign-up-icon">
-            <use href="../img/signup/sprite.svg#icon-login-arrow"></use>
-          </svg>
-        </button>
-      </div>
+      <nav class="navigation-burger">
+        <ul class="site-nav-burger">
+          <li class="site-nav__item_active">
+            <a class="site-nav__link_active" href="./index.html">Home</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="./shopping.html">Shopping list
+              <img class="head-nav-logo" width="20" height="20" src="/bookstore-team-project/assets/uil_cart_optimized-31892e4d.svg"
+                alt="shopping-logo" />
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
+
+
+
+    <!-- Switcher & buttons -->
+    <div class="header-container-2">
+      <label class="switch toggle-theme common-toggle">
+        <input type="checkbox" class="js-switch-theme" />
+        <span class="slider round"></span>
+      </label>
+      <button type="button" class="user-sign-up" data-modal-open>
+        <span class="user-sign-up-text">Sign up</span>
+        <svg width="23" height="26" class="user-sign-up-icon">
+          <use href="/bookstore-team-project/assets/sprite-cf22ec5b.svg#icon-login-arrow"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  </div>
   </div>
 </header>
     <main>

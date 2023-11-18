@@ -1,0 +1,29 @@
+{
+  "name": "bookstore-team-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --base=/bookstore-team-project/",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "glob": "^8.1.0",
+    "vite": "^4.0.5"
+  },
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4",
+    "axios": "^1.6.2",
+    "basiclightbox": "^5.0.4",
+    "firebase": "^10.6.0",
+    "lodash.debounce": "^4.0.8",
+    "modern-normalize": "^2.0.0",
+    "notiflix": "^3.2.6",
+    "swiper": "^11.0.4",
+    "vite-plugin-full-reload": "^1.0.5",
+    "vite-plugin-html-inject": "^1.0.1"
+  }
+}

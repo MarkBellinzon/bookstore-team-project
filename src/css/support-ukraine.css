@@ -14,7 +14,7 @@
   border-radius: 16px;
   background: radial-gradient(
     189.32% 190.93% at 59.76% -23.42%,
-    var(--purple-color) 18.03%,
+    #4f2ee8 18.03%,
     var(--white-color) 100%
   );
   box-shadow: 0 10px 10px 0 rgb(245, 245, 247, 0.1);
